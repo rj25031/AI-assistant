@@ -1,8 +1,15 @@
 from setup import speak,listen
-from tasks import systemTask
+from tasks import systemTask,webTask
 
 
-result=listen.listen()
-speak.speak(result)
+query=listen.listen()
+
+
+if "Wikipedia" in query:
+    result = webTask.searchWikipedia(query)
+
+    speak.speak(result)
+
+
 
 

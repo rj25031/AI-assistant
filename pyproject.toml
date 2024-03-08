@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "assistant"
+version = "0.1.0"
+description = ""
+authors = ["Rupesh Jadhav <rj25031@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyautogui = "^0.9.54"
+pywhatkit = "^5.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

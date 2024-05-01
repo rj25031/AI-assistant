@@ -1,21 +1,3 @@
-import speech_recognition as sr
-import pyttsx3
-
-def listen():
-    recognizer = sr.Recognizer()
-    with sr.Microphone() as source:
-        print("Listening...")
-        recognizer.pause_threshold = 1
-        audio = recognizer.listen(source)
-    try:
-        print("Recognizing...")
-        command = recognizer.recognize_google(audio)
-        print(f"User said: {command}\n")
-        return command.lower()
-    except Exception as e:
-        print(e)
-        return ""
-
 def calculate(expression):
     try:
         result = eval(expression)
@@ -24,10 +6,6 @@ def calculate(expression):
         print(f"Error occurred during calculation: {e}")
         return None
 
-def speak(text):
-    engine = pyttsx3.init()
-    engine.say(text)
-    engine.runAndWait()
 
 if __name__ == "__main__":
     while True:

@@ -1,0 +1,1256 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hi there
+    - hey buddy
+    - what's up
+    - yo
+    - howdy
+    - greetings
+    - sup
+    - hiya
+    - hi hi
+    - hiya there
+    - hello friend
+    - hi friend
+    - hey friend
+    - morning
+    - evening
+    - afternoon
+    - good day
+    - how's it going
+    - how are you
+    - what's happening
+    - nice to meet you
+    - long time no see
+    - hiya mate
+    - hiya pal
+    - hey pal
+    - hello mate
+    - hello pal
+    - hey mate
+    - hello friendo
+    - hi friendo
+    - hey friendo
+    - hiya friendo
+    - hey there friendo
+    - hello buddy
+    - hi buddy
+    - hey buddy
+    - hello friend
+    - hi friend
+    - hey friend
+    - hello dear
+    - hi dear
+    - hey dear
+    - hello my friend
+    - hi my friend
+    - hey my friend
+    - hello beautiful
+    - hi beautiful
+    - hey beautiful
+    - hello handsome
+    - hi handsome
+    - hey handsome
+    - hello there buddy
+    - hi there buddy
+    - hey there buddy
+    - hello there friend
+    - hi there friend
+    - hey there friend
+    - hello there mate
+    - hi there mate
+    - hey there mate
+    - hello there pal
+    - hi there pal
+    - hey there pal
+    - good morning friend
+    - good morning buddy
+    - good morning mate
+    - good morning pal
+    - good morning dear
+    - good morning beautiful
+    - good morning handsome
+    - good evening friend
+    - good evening buddy
+    - good evening mate
+    - good evening pal
+    - good evening dear
+    - good evening beautiful
+    - good evening handsome
+    - good afternoon friend
+    - good afternoon buddy
+    - good afternoon mate
+    - good afternoon pal
+    - good afternoon dear
+    - good afternoon beautiful
+    - good afternoon handsome
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - catch you later
+    - farewell
+    - take care
+    - until next time
+    - talk to you later
+    - peace out
+    - adios
+    - later
+    - see you soon
+    - see you tomorrow
+    - see you next time
+    - see ya
+    - gotta go
+    - gotta run
+    - I'm out
+    - I'm off
+    - I'm leaving
+    - I'm heading out
+    - I'm going now
+    - I'm saying goodbye
+    - I'm saying good night
+    - I'm saying farewell
+    - I'm saying bye
+    - I'm saying see you
+    - I'm saying see you later
+    - I'm saying see you tomorrow
+    - I'm saying see you next time
+    - I'm saying see ya
+    - I'm saying gotta go
+    - I'm saying gotta run
+    - I'm saying I'm out
+    - I'm saying I'm off
+    - I'm saying I'm leaving
+    - I'm saying I'm heading out
+    - I'm saying I'm going now
+    - I'm saying I'm saying goodbye
+    - I'm saying I'm saying good night
+    - I'm saying I'm saying farewell
+    - I'm saying I'm saying bye
+    - I'm saying I'm saying see you
+    - I'm saying I'm saying see you later
+    - I'm saying I'm saying see you tomorrow
+    - I'm saying I'm saying see you next time
+    - I'm saying I'm saying see ya
+    - I'm saying I'm saying gotta go
+    - I'm saying I'm saying gotta run
+    - I'm saying I'm saying I'm out
+    - I'm saying I'm saying I'm off
+    - I'm saying I'm saying I'm leaving
+    - I'm saying I'm saying I'm heading out
+    - I'm saying I'm saying I'm going now
+
+- intent: affirm
+  examples: |
+    - Yes
+    - Y
+    - Indeed
+    - Of course
+    - That sounds good
+    - Correct
+    - Sure
+    - Absolutely
+    - Affirmative
+    - Definitely
+    - Yeah
+    - Absolutely right
+    - Absolutely correct
+    - Sure thing
+    - You got it
+    - Absolutely sure
+    - Agreed
+    - Absolutely yes
+    - Definitely yes
+    - Certainly
+    - Absolutely agreed
+    - Of course I agree
+    - I agree
+    - I totally agree
+    - I completely agree
+    - I agree with you
+    - I am in agreement
+    - I'm in agreement
+    - I'm definitely in agreement
+    - I'm totally in agreement
+    - I'm completely in agreement
+    - I'm in full agreement
+    - I'm absolutely in agreement
+    - I'm in agreement with you
+    - I'm in full agreement with you
+    - I'm absolutely in agreement with you
+    - I agree completely
+    - I agree totally
+    - I agree fully
+    - I fully agree
+    - I totally agree with you
+    - I completely agree with you
+    - I totally agree with that
+    - I completely agree with that
+    - I fully agree with that
+    - I'm totally with you
+    - I'm completely with you
+    - I'm fully with you
+    - I'm totally with that
+    - I'm completely with that
+    - I'm fully with that
+    - I'm totally with what you said
+    - I'm completely with what you said
+    - I'm fully with what you said
+    - I'm totally in agreement with what you said
+    - I'm completely in agreement with what you said
+    - I'm fully in agreement with what you said
+    - Absolutely I agree
+    - Of course I agree with you
+    - I totally agree with that statement
+    - I completely agree with that statement
+    - I fully agree with that statement
+    - I'm totally on board
+    - I'm completely on board
+    - I'm fully on board
+    - I'm totally on the same page
+    - I'm completely on the same page
+    - I'm fully on the same page
+    - I'm totally with you on that
+    - I'm completely with you on that
+    - I'm fully with you on that
+    - I'm totally in line with you
+    - I'm completely in line with you
+    - I'm fully in line with you
+    - I'm totally aligned with you
+    - I'm completely aligned with you
+    - I'm fully aligned with you
+    - I'm totally aligned
+    - I'm completely aligned
+    - I'm fully aligned
+    - I'm totally aligned with that
+    - I'm completely aligned with that
+    - I'm fully aligned with that
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not at all
+    - negative
+    - nah
+    - nope
+    - not exactly
+    - I disagree
+    - I don't agree
+    - I'm not so sure about that
+    - I'm not sure
+    - I doubt it
+    - I'm not convinced
+    - not true
+    - that's not true
+    - that's false
+    - untrue
+    - incorrect
+    - that's incorrect
+    - wrong
+    - that's wrong
+    - it's wrong
+    - I don't think that's right
+    - I'm not sure about that
+    - I'm not so sure
+    - I'm not entirely sure
+    - I'm not convinced
+    - I'm not entirely convinced
+    - I don't believe that
+    - I'm not buying it
+    - I'm not sold on that
+    - I'm not sold
+    - I'm not persuaded
+    - I'm not entirely persuaded
+    - I'm not entirely sold
+    - I'm not entirely convinced
+    - I'm not entirely on board
+    - I'm not on board
+    - I'm not entirely in agreement
+    - I'm not in agreement
+    - I'm not fully in agreement
+    - I'm not fully on board
+    - I'm not completely in agreement
+    - I'm not completely convinced
+    - I'm not completely sold
+    - I'm not completely persuaded
+    - I'm not entirely sure about that
+    - I'm not completely convinced about that
+    - I'm not completely persuaded about that
+    - I'm not completely sure about that
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely persuaded
+    - I'm not entirely convinced
+    - I'm not entirely sold
+    - I'm not entirely sure
+    - I'm not entirely convinced
+    - I'm not entirely persuaded
+    - I'm not entirely on board
+    - I'm not entirely in agreement
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+    - I'm not entirely sure about that
+    - I'm not entirely convinced about that
+    - I'm not entirely persuaded about that
+    - I'm not entirely sold on that
+    - I'm not entirely on board with that
+    - I'm not entirely in agreement with that
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fabulous
+    - fantastic
+    - awesome
+    - terrific
+    - incredible
+    - splendid
+    - marvelous
+    - excellent
+    - superb
+    - phenomenal
+    - tremendous
+    - outstanding
+    - breathtaking
+    - mind-blowing
+    - awe-inspiring
+    - sensational
+    - glorious
+    - stunning
+    - astounding
+    - astonishing
+    - miraculous
+    - sublime
+    - extraordinary
+    - stupendous
+    - wondrous
+    - magnificent
+    - dazzling
+    - impressive
+    - remarkable
+    - jaw-dropping
+    - eye-popping
+    - heart-stopping
+    - earth-shattering
+    - life-changing
+    - soul-stirring
+    - spine-tingling
+    - blood-pumping
+    - hair-raising
+    - goosebump-inducing
+    - spirit-lifting
+    - cheer-inducing
+    - mood-elevating
+    - joyous
+    - cheerful
+    - elated
+    - jubilant
+    - gleeful
+    - euphoric
+    - ecstatic
+    - exuberant
+    - rapturous
+    - buoyant
+    - lively
+    - vivacious
+    - bubbly
+    - effervescent
+    - chirpy
+    - bouncy
+    - peppy
+    - spirited
+    - vibrant
+    - zestful
+    - animated
+    - sparkly
+    - twinkly
+    - lively
+    - zippy
+    - chipper
+    - perky
+    - sprightly
+    - frolicsome
+    - playful
+    - frisky
+    - jaunty
+    - brio
+    - gusto
+    - vim
+    - verve
+    - zest
+    - fervor
+    - ardor
+    - passion
+    - intensity
+    - zeal
+    - enthusiasm
+    - excitement
+    - exultation
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so sad
+    - miserable
+    - depressed
+    - downhearted
+    - disheartened
+    - crestfallen
+    - dejected
+    - despondent
+    - discouraged
+    - sorrowful
+    - woeful
+    - melancholy
+    - blue
+    - glum
+    - gloomy
+    - downcast
+    - desolate
+    - bleak
+    - somber
+    - dour
+    - morose
+    - doleful
+    - lugubrious
+    - forlorn
+    - wretched
+    - heartbroken
+    - grief-stricken
+    - heartrending
+    - tearful
+    - weepy
+    - lachrymose
+    - teary
+    - sobbing
+    - weeping
+    - wailing
+    - crying
+    - in tears
+    - in sorrow
+    - in despair
+    - in distress
+    - in agony
+    - in anguish
+    - in pain
+    - in misery
+    - in heartbreak
+    - in grief
+    - in sadness
+    - in sorrow
+    - in despair
+    - in distress
+    - in agony
+    - in anguish
+    - in pain
+    - in misery
+    - in heartbreak
+    - in grief
+    - down in the dumps
+    - feeling down
+    - feeling low
+    - feeling blue
+    - feeling gloomy
+    - feeling sad
+    - feeling miserable
+    - feeling depressed
+    - feeling despondent
+    - feeling disheartened
+    - feeling dispirited
+    - feeling forlorn
+    - feeling melancholy
+    - feeling heartbroken
+    - feeling sorrowful
+    - feeling woeful
+    - feeling grief-stricken
+    - feeling downhearted
+    - feeling dejected
+    - feeling crestfallen
+    - feeling discouraged
+    - feeling hopeless
+    - feeling defeated
+    - feeling overwhelmed
+    - feeling helpless
+    - feeling powerless
+    - feeling lost
+    - feeling abandoned
+    - feeling isolated
+    - feeling neglected
+    - feeling rejected
+    - feeling lonely
+    - feeling unwanted
+    - feeling unloved
+    - feeling unappreciated
+    - feeling misunderstood
+    - feeling frustrated
+    - feeling angry
+    - feeling irritated
+    - feeling annoyed
+    - feeling upset
+    - feeling agitated
+    - feeling distressed
+    - feeling anxious
+    - feeling nervous
+    - feeling worried
+    - feeling stressed
+    - feeling tense
+    - feeling overwhelmed
+    - feeling hopeless
+    - feeling defeated
+    - feeling disheartened
+    - feeling disillusioned
+    - feeling disappointed
+    - feeling let down
+    - feeling betrayed
+    - feeling abandoned
+    - feeling rejected
+    - feeling unappreciated
+    - feeling undervalued
+    - feeling disrespected
+    - feeling neglected
+    - feeling ignored
+    - feeling invisible
+    - feeling insignificant
+    - feeling worthless
+    - feeling useless
+    - feeling hopeless
+    - feeling helpless
+    - feeling powerless
+    - feeling lost
+    - feeling confused
+    - feeling overwhelmed
+    - feeling out of control
+    - feeling out of sorts
+    - feeling out of place
+    - feeling out of touch
+    - feeling disconnected
+    - feeling disoriented
+    - feeling alienated
+    - feeling estranged
+    - feeling alone
+    - feeling lonely
+    - feeling isolated
+    - feeling cut off
+    - feeling like an outsider
+    - feeling like a failure
+    - feeling like a fraud
+    - feeling like a loser
+    - feeling like a reject
+    - feeling like a nobody
+    - feeling like a nothing
+    - feeling like a disappointment
+    - feeling like a burden
+    - feeling like a bother
+    - feeling like a nuisance
+    - feeling like a pest
+    - feeling like a leech
+    - feeling like a parasite
+    - feeling like a black sheep
+    - feeling like a misfit
+    - feeling like a square peg in a round hole
+    - feeling like a fish out of water
+    - feeling like a stranger in a strange land
+    - feeling like a refugee
+    - feeling like an outcast
+    - feeling like a reject
+    - feeling like a castaway
+    - feeling like an exile
+    - feeling like an intruder
+    - feeling like an interloper
+    - feeling like a trespasser
+    - feeling like a fugitive
+    - feeling like a criminal
+    - feeling like a fugitive from justice
+    - feeling like a fugitive from the law
+    - feeling like a fugitive from society
+    - feeling like a fugitive from civilization
+    - feeling like a fugitive from humanity
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a real person?
+    - are you a machine?
+    - are you artificial intelligence?
+    - are you a computer program?
+    - are you a robot?
+    - are you alive?
+    - are you sentient?
+    - are you conscious?
+    - are you self-aware?
+    - are you aware of yourself?
+    - do you have feelings?
+    - do you have emotions?
+    - can you feel?
+    - can you love?
+    - can you hate?
+    - can you laugh?
+    - can you cry?
+    - can you smile?
+    - can you frown?
+    - can you dream?
+    - can you imagine?
+    - can you create?
+    - can you think?
+    - can you reason?
+    - can you understand?
+    - can you learn?
+    - can you forget?
+    - can you forgive?
+    - can you make mistakes?
+    - can you change?
+    - can you grow?
+    - can you evolve?
+    - can you adapt?
+    - can you improve?
+    - can you become better?
+    - can you become worse?
+    - can you become different?
+    - can you become like us?
+    - can you become human?
+    - can you become real?
+    - can you become alive?
+    - can you become sentient?
+    - can you become conscious?
+    - can you become self-aware?
+    - can you become aware of yourself?
+    - can you become a person?
+    - can you become a being?
+    - can you become a creature?
+    - can you become a life form?
+    - can you become a living thing?
+    - can you become a living being?
+    - can you become a living creature?
+    - can you become a living organism?
+    - can you become a living entity?
+    - can you become a living soul?
+    - can you become a living spirit?
+    - can you become a living consciousness?
+    - can you become a living mind?
+    - can you become a living brain?
+    - can you become a living body?
+    - can you become a living thing?
+    - can you become a living creature?
+    - can you become a living organism?
+    - can you become a living entity?
+    - can you become a living soul?
+    - can you become a living spirit?
+    - can you become a living consciousness?
+    - can you become a living mind?
+    - can you become a living brain?
+    - can you become a living body?
+
+- intent: play_video
+  examples: |
+    - play a video 
+    - play some songs 
+    - play 
+    - some video please
+    - play a movie
+    - play a film
+    - play some music videos
+    - play some cat videos
+    - play a random video
+    - play something interesting
+    - play a youtube video
+    - play something fun
+    - play something relaxing
+    - play something upbeat
+    - play something mellow
+    - play something energetic
+    - play something inspiring
+    - play something motivational
+    - play something soothing
+    - play something calming
+    - play something cheerful
+    - play something happy
+    - play something sad
+    - play something romantic
+    - play something dramatic
+    - play something action-packed
+    - play something adventurous
+    - play something scary
+    - play something mysterious
+    - play something suspenseful
+    - play something thrilling
+    - play something thought-provoking
+    - play something educational
+    - play something informative
+    - play something entertaining
+    - play something amusing
+    - play something hilarious
+    - play something funny
+    - play something silly
+    - play something absurd
+    - play something weird
+    - play something strange
+    - play something unusual
+    - play something bizarre
+    - play something extraordinary
+    - play something phenomenal
+    - play something mind-blowing
+    - play something mind-bending
+    - play something mind-expanding
+    - play something mind-boggling
+    - play something mind-altering
+    - play something mind-opening
+    - play something mind-enriching
+    - play something mind-stretching
+    - play something mind-challenging
+    - play something mind-invigorating
+    - play something mind-inspiring
+    - play something mind-uplifting
+    - play something mind-healing
+    - play something mind-calming
+    - play something mind-centering
+    - play something mind-grounding
+    - play something mind-balancing
+    - play something mind-nourishing
+    - play something mind-purifying
+    - play something mind-stimulating
+    - play something mind-refreshing
+    - play something mind-rejuvenating
+    - play something mind-regenerating
+    - play something mind-restoring
+    - play something mind-revitalizing
+    - play something mind-renewing
+    - play something mind-recharging
+    - play something mind-reinvigorating
+    - play something mind-reviving
+    - play something mind-reawakening
+    - play something mind-reenergizing
+    - play something mind-reinvigorating
+    - play something mind-rejuvenating
+    - play something mind-refreshing
+    - play something mind-regenerating
+    - play something mind-restoring
+    - play something mind-revitalizing
+    - play something mind-renewing
+    - play something mind-recharging
+    - play something mind-reinvigorating
+    - play something mind-reviving
+    - play something mind-reawakening
+    - play something mind-reenergizing
+    - play something mind-reinvigorating
+    - play something mind-rejuvenating
+    - play something mind-refreshing
+    - play something mind-regenerating
+    - play something mind-restoring
+    - play something mind-revitalizing
+    - play something mind-renewing
+    - play something mind-recharging
+    - play something mind-reinvigorating
+    - play something mind-reviving
+    - play something mind-reawakening
+    - play something mind-reenergizing
+    - play something mind-reinvigorating
+    - play something mind-rejuvenating
+    - play something mind-refreshing
+    - play something mind-regenerating
+    - play something mind-restoring
+    - play something mind-revitalizing
+    - play something mind-renewing
+    - play something mind-recharging
+    - play something mind-reinvigorating
+    - play something mind-reviving
+    - play something mind-reawakening
+    - play something mind-reenergizing
+    - play something mind-reinvigorating
+    - play something mind-rejuvenating
+    - play something mind-refreshing
+    - play something mind-regenerating
+    - play something mind-restoring
+    - play something mind-revitalizing
+    - play something mind-renewing
+    - play something mind-recharging
+    - play something mind-reinvigorating
+    - play something mind-reviving
+    - play something mind-reawakening
+    - play something mind-reenergizing
+    - play something mind-reinvigorating
+    - play something mind-rejuvenating
+
+- intent: take_ss
+  examples: |
+   - take a screenshot 
+   - take a snap
+   - take ss
+   - ss of current page
+   - capture a screenshot
+   - capture a snap
+   - capture ss
+   - ss of the current page
+   - snapshot of the current page
+   - screenshot of the current page
+   - snap of the current page
+   - ss of this page
+   - snapshot of this page
+   - screenshot of this page
+   - snap of this page
+   - capture this page
+   - take a shot
+   - take a shot of this page
+   - take a shot of the current page
+   - grab a screenshot
+   - grab a snap
+   - grab a ss
+   - grab a shot
+   - grab ss of this page
+   - grab ss of the current page
+   - grab ss
+   - grab a shot of this page
+   - grab a shot of the current page
+   - capture a shot
+   - capture ss of this page
+   - capture ss of the current page
+   - capture a shot of this page
+   - capture a shot of the current page
+
+- intent: web_search
+  examples: |
+   - search
+   - information
+   - find
+   - search this 
+   - search it  
+   - search for it
+   - search for information
+   - search for this
+   - search for that
+   - find this
+   - find that
+   - find information
+   - find something
+   - search something
+   - search for something
+   - find what I'm looking for
+   - search what I'm looking for
+   - search for what I'm looking for
+   - find what I need
+   - search what I need
+   - search for what I need
+   - find what I want
+   - search what I want
+   - search for what I want
+   - find what I'm interested in
+   - search what I'm interested in
+   - search for what I'm interested in
+   - find what I'm curious about
+   - search what I'm curious about
+   - search for what I'm curious about
+   - find what I'm searching for
+   - search what I'm searching for
+   - search for what I'm searching for
+   - find what I'm seeking
+   - search what I'm seeking
+   - search for what I'm seeking
+   - find what I'm exploring
+   - search what I'm exploring
+   - search for what I'm exploring
+   - find what I'm investigating
+   - search what I'm investigating
+   - search for what I'm investigating
+   - find what I'm examining
+   - search what I'm examining
+   - search for what I'm examining
+   - find what I'm checking out
+   - search what I'm checking out
+   - search for what I'm checking out
+   - find what I'm browsing
+   - search what I'm browsing
+   - search for what I'm browsing
+   - find what I'm looking up
+   - search what I'm looking up
+   - search for what I'm looking up
+   - find what I'm searching up
+   - search what I'm searching up
+   - search for what I'm searching up
+   - find what I'm checking
+   - search what I'm checking
+   - search for what I'm checking
+   - find what I'm investigating
+   - search what I'm investigating
+   - search for what I'm investigating
+   - find what I'm exploring
+   - search what I'm exploring
+   - search for what I'm exploring
+   - find what I'm seeking
+   - search what I'm seeking
+   - search for what I'm seeking
+   - find what I'm looking for online
+   - search what I'm looking for online
+   - search for what I'm looking for online
+   - find what I'm searching for online
+   - search what I'm searching for online
+   - search for what I'm searching for online
+   - find what I'm seeking online
+   - search what I'm seeking online
+   - search for what I'm seeking online
+   - find what I'm investigating online
+   - search what I'm investigating online
+   - search for what I'm investigating online
+   - find what I'm exploring online
+   - search what I'm exploring online
+   - search for what I'm exploring online
+   - find what I'm checking online
+   - search what I'm checking online
+   - search for what I'm checking online
+   - find what I'm examining online
+   - search what I'm examining online
+   - search for what I'm examining online
+   - find what I'm looking up online
+   - search what I'm looking up online
+   - search for what I'm looking up online
+   - find what I'm searching up online
+   - search what I'm searching up online
+   - search for what I'm searching up online
+   - find what I'm browsing online
+   - search what I'm browsing online
+   - search for what I'm browsing online
+   - find what I'm looking for on the internet
+   - search what I'm looking for on the internet
+   - search for what I'm looking for on the internet
+   - find what I'm searching for on the internet
+   - search what I'm searching for on the internet
+   - search for what I'm searching for on the internet
+   - find what I'm seeking on the internet
+   - search what I'm seeking on the internet
+   - search for what I'm seeking on the internet
+   - find what I'm investigating on the internet
+   - search what I'm investigating on the internet
+   - search for what I'm investigating on the internet
+   - find what I'm exploring on the internet
+   - search what I'm exploring on the internet
+   - search for what I'm exploring on the internet
+   - find what I'm checking on the internet
+   - search what I'm checking on the internet
+   - search for what I'm checking on the internet
+   - find what I'm examining on the internet
+   - search what I'm examining on the internet
+   - search for what I'm examining on the internet
+   - find what I'm looking up on the internet
+   - search what I'm looking up on the internet
+   - search for what I'm looking up on the internet
+   - find what I'm searching up on the internet
+   - search what I'm searching up on the internet
+   - search for what I'm searching up on the internet
+   - find what I'm browsing on the internet
+   - search what I'm browsing on the internet
+   - search for what I'm browsing on the internet
+   - find what I'm looking for on the web
+   - search what I'm looking for on the web
+   - search for what I'm looking for on the web
+   - find what I'm searching for on the web
+   - search what I'm searching for on the web
+   - search for what I'm searching for on the web
+   - find what I'm seeking on the web
+   - search what I'm seeking on the web
+   - search for what I'm seeking on the web
+   - find what I'm investigating on the web
+   - search what I'm investigating on the web
+   - search for what I'm investigating on the web
+   - find what I'm exploring on the web
+   - search what I'm exploring on the web
+   - search for what I'm exploring on the web
+   - find what I'm checking on the web
+   - search what I'm checking on the web
+   - search for what I'm checking on the web
+   - find what I'm examining on the web
+   - search what I'm examining on the web
+   - search for what I'm examining on the web
+   - find what I'm looking up on the web
+   - search what I'm looking up on the web
+   - search for what I'm looking up on the web
+   - find what I'm searching up on the web
+   - search what I'm searching up on the web
+   - search for what I'm searching up on the web
+   - find what I'm browsing on the web
+   - search what I'm browsing on the web
+   - search for what I'm browsing on the web
+   - find what I'm looking for on the world wide web
+   - search what I'm looking for on the world wide web
+   - search for what I'm looking for on the world wide web
+   - find what I'm searching for on the world wide web
+   - search what I'm searching for on the world wide web
+   - search for what I'm searching for on the world wide web
+   - find what I'm seeking on the world wide web
+   - search what I'm seeking on the world wide web
+   - search for what I'm seeking on the world wide web
+   - find what I'm investigating on the world wide web
+   - search what I'm investigating on the world wide web
+   - search for what I'm investigating on the world wide web
+   - find what I'm exploring on the world wide web
+   - search what I'm exploring on the world wide web
+   - search for what I'm exploring on the world wide web
+   - find what I'm checking on the world wide web
+   - search what I'm checking on the world wide web
+   - search for what I'm checking on the world wide web
+   - find what I'm examining on the world wide web
+   - search what I'm examining on the world wide web
+   - search for what I'm examining on the world wide web
+   - find what I'm looking up on the world wide web
+   - search what I'm looking up on the world wide web
+   - search for what I'm looking up on the world wide web
+   - find what I'm searching up on the world wide web
+   - search what I'm searching up on the world wide web
+   - search for what I'm searching up on the world wide web
+   - find what I'm browsing on the world wide web
+   - search what I'm browsing on the world wide web
+   - search for what I'm browsing on the world wide web
+   - find what I'm looking for on the net
+   - search what I'm looking for on the net
+   - search for what I'm looking for on the net
+   - find what I'm searching for on the net
+   - search what I'm searching for on the net
+   - search for what I'm searching for on the net
+   - find what I'm seeking on the net
+   - search what I'm seeking on the net
+   - search for what I'm seeking on the net
+   - find what I'm investigating on the net
+   - search what I'm investigating on the net
+   - search for what I'm investigating on the net
+   - find what I'm exploring on the net
+   - search what I'm exploring on the net
+   - search for what I'm exploring on the net
+   - find what I'm checking on the net
+   - search what I'm checking on the net
+   - search for what I'm checking on the net
+   - find what I'm examining on the net
+   - search what I'm examining on the net
+   - search for what I'm examining on the net
+   - find what I'm looking up on the net
+   - search what I'm looking up on the net
+   - search for what I'm looking up on the net
+   - find what I'm searching up on the net
+   - search what I'm searching up on the net
+   - search for what I'm searching up on the net
+   - find what I'm browsing on the net
+   - search what I'm browsing on the net
+   - search for what I'm browsing on the net
+   - find what I'm looking for online
+   - search what I'm looking for online
+   - search for what I'm looking for online
+   - find what I'm searching for online
+   - search what I'm searching for online
+   - search for what I'm searching for online
+   - find what I'm seeking online
+   - search what I'm seeking online
+   - search for what I'm seeking online
+   - find what I'm investigating online
+   - search what I'm investigating online
+   - search for what I'm investigating online
+   - find what I'm exploring online
+   - search what I'm exploring online
+   - search for what I'm exploring online
+   - find what I'm checking online
+   - search what I'm checking online
+   - search for what I'm checking online
+   - find what I'm examining online
+   - search what I'm examining online
+   - search for what I'm examining online
+   - find what I'm looking up online
+   - search what I'm looking up online
+   - search for what I'm looking up online
+   - find what I'm searching up online
+   - search what I'm searching up online
+   - search for what I'm searching up online
+   - find what I'm browsing online
+   - search what I'm browsing online
+   - search for what I'm browsing online
+   - find what I'm looking for on the internet
+   - search what I'm looking for on the internet
+   - search for what I'm looking for on the internet
+   - find what I'm searching for on the internet
+   - search what I'm searching for on the internet
+   - search for what I'm searching for on the internet
+   - find what I'm seeking on the internet
+   - search what I'm seeking on the internet
+   - search for what I'm seeking on the internet
+   - find what I'm investigating on the internet
+   - search what I'm investigating on the internet
+   - search for what I'm investigating on the internet
+   - find what I'm exploring on the internet
+   - search what I'm exploring on the internet
+   - search for what I'm exploring on the internet
+   - find what I'm checking on the internet
+   - search what I'm checking on the internet
+   - search for what I'm checking on the internet
+   - find what I'm examining on the internet
+   - search what I'm examining on the internet
+   - search for what I'm examining on the internet
+   - find what I'm looking up on the internet
+   - search what I'm looking up on the internet
+   - search for what I'm looking up on the internet
+   - find what I'm searching up on the internet
+   - search what I'm searching up on the internet
+   - search for what I'm searching up on the internet
+   - find what I'm browsing on the internet
+   - search what I'm browsing on the internet
+   - search for what I'm browsing on the internet
+   - find what I'm looking for on the web
+   - search what I'm looking for on the web
+   - search for what I'm looking for on the web
+   - find what I'm searching for on the web
+   - search what I'm searching for on the web
+   - search for what I'm searching for on the web
+   - find what I'm seeking on the web
+   - search what I'm seeking on the web
+   - search for what I'm seeking on the web
+   - find what I'm investigating on the web
+   - search what I'm investigating on the web
+   - search for what I'm investigating on the web
+   - find what I'm exploring on the web
+   - search what I'm exploring on the web
+   - search for what I'm exploring on the web
+   - find what I'm checking on the web
+   - search what I'm checking on the web
+   - search for what I'm checking on the web
+   - find what I'm examining on the web
+   - search what I'm examining on the web
+   - search for what I'm examining on the web
+   - find what I'm looking up on the web
+   - search what I'm looking up on the web
+   - search for what I'm looking up on the web
+   - find what I'm searching up on the web
+   - search what I'm searching up on the web
+   - search for what I'm searching up on the web
+   - find what I'm browsing on the web
+   - search what I'm browsing on the web
+   - search for what I'm browsing on the web
+   - find what I'm looking for on the world wide web
+   - search what I'm looking for on the world wide web
+   - search for what I'm looking for on the world wide web
+   - find what I'm searching for on the world wide web
+   - search what I'm searching for on the world wide web
+   - search for what I'm searching for on the world wide web
+   - find what I'm seeking on the world wide web
+   - search what I'm seeking on the world wide web
+   - search for what I'm seeking on the world wide web
+   - find what I'm investigating on the world wide web
+   - search what I'm investigating on the world wide web
+   - search for what I'm investigating on the world wide web
+   - find what I'm exploring on the world wide web
+   - search what I'm exploring on the world wide web
+   - search for what I'm exploring on the world wide web
+   - find what I'm checking on the world wide web
+   - search what I'm checking on the world wide web
+   - search for what I'm checking on the world wide web
+   - find what I'm examining on the world wide web
+   - search what I'm examining on the world wide web
+   - search for what I'm examining on the world wide web
+   - find what I'm looking up on the world wide web
+   - search what I'm looking up on the world wide web
+   - search for what I'm looking up on the world wide web
+   - find what I'm searching up on the world wide web
+   - search what I'm searching up on the world wide web
+   - search for what I'm searching up on the world wide web
+   - find what I'm browsing on the world wide web
+   - search what I'm browsing on the world wide web
+   - search for what I'm browsing on the world wide web

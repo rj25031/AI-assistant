@@ -6,9 +6,16 @@ authors = ["Rupesh Jadhav <rj25031@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.8,<3.11"
+requests = "^2.31.0"
+ujson = "^5.9.0"
+speechrecognition = "^3.10.3"
+pyttsx3 = "^2.90"
 pyautogui = "^0.9.54"
 pywhatkit = "^5.4"
+psutil = "^5.9.8"
+pyaudio = "^0.2.14"
+
 
 
 [build-system]

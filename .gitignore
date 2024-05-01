@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+assistant/brain/.rasa
+assistant/brain/models
 # Distribution / packaging
 .Python
 build/

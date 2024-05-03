@@ -1,0 +1,88 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - play_video
+  - take_ss
+  - web_search
+  - set_reminder
+  - open_app
+  - calculate
+  - file_management
+  - min_max
+  - notes
+  - email
+  - shutdown_restart
+  - get_weather
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hey! How can i help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_pv:
+  - text: "playing your video"
+  utter_ss:
+  - text: "taking ss of current page"
+  utter_ws:
+  - text: "searching on web"
+  
+  utter_set_reminder:
+  - text: "setting  a reminder for you"
+
+  utter_open_app:
+  - text: "opening  the app for you"
+
+  utter_calculate:
+  - text: "Sure, I'll do it for you."
+
+  utter_file_management:
+  - text: "doing it for you"
+
+  utter_min_max:
+  - text: "done"
+
+  utter_notes:
+  - text: "sure, i'll do  that for you"
+
+  utter_email:
+  - text: "What is the email address?"
+  - text: "writing mail for you"
+
+  utter_shutdown_restart:
+  - text: "Okay. I can help with that."
+
+  utter_get_weather:
+  - text: "okay"
+
+
+
+actions:
+  - action_hello_world
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

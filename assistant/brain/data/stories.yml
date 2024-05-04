@@ -1,56 +1,90 @@
 version: "3.1"
 
 stories:
+  - story: greet and goodbye
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goodbye
+      - action: utter_goodbye
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: affirm and deny
+    steps:
+      - intent: affirm
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_happy
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet 
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: mood happy and unhappy
+    steps:
+      - intent: mood_great
+      - action: utter_happy
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
 
-- story: ss path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: take_ss
-  - action: utter_ss
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: play video
+    steps:
+      - intent: play_video
+      - action: utter_pv
 
-- story: video path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: play_video
-  - action: utter_pv
-  - action: action_hello_world
+  - story: take screenshot
+    steps:
+      - intent: take_ss
+      - action: utter_ss
 
-- story: web path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: web_search
-  - action: utter_ws
+  - story: web search
+    steps:
+      - intent: web_search
+      - action: utter_ws
 
+  - story: set reminder
+    steps:
+      - intent: set_reminder
+      - action: utter_set_reminder
+
+  - story: open app
+    steps:
+      - intent: open_app
+      - action: utter_open_app
+
+  - story: calculate
+    steps:
+      - intent: calculate
+      - action: utter_calculate
+
+  - story: file management
+    steps:
+      - intent: file_management
+      - action: utter_file_management
+
+  - story: min max
+    steps:
+      - intent: min_max
+      - action: utter_min_max
+
+  - story: take notes
+    steps:
+      - intent: notes
+      - action: utter_notes
+
+  - story: email
+    steps:
+      - intent: email
+      - action: utter_email
+
+  - story: shutdown or restart
+    steps:
+      - intent: shutdown_restart
+      - action: utter_shutdown_restart
+
+  - story: get weather
+    steps:
+      - intent: get_weather
+      - action: utter_get_weather

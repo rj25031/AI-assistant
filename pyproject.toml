@@ -15,6 +15,8 @@ pyautogui = "^0.9.54"
 pywhatkit = "^5.4"
 psutil = "^5.9.8"
 pyaudio = "^0.2.14"
+pillow = "^10.3.0"
+opencv-python = "^4.9.0.80"
 
 
 

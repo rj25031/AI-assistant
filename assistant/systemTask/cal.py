@@ -1,3 +1,5 @@
+import re
+
 def calculate(expression):
     try:
         result = eval(expression)
@@ -7,37 +9,15 @@ def calculate(expression):
         return None
 
 
-if __name__ == "__main__":
-    while True:
-        command = listen()
-        if "exit" in command:
-            speak("Exiting...")
-            print("Exiting...")
-            break
-        elif any(op in command for op in ["add", "plus", "+", "sum"]):
-            expression = command.replace("add", "+").replace("plus", "+").replace("sum", "+")
-            result = calculate(expression)
-            if result is not None:
-                speak(f"The result is {result}")
-                print(f"Result: {result}")
-        elif any(op in command for op in ["subtract", "minus", "-", "difference"]):
-            expression = command.replace("subtract", "-").replace("minus", "-").replace("difference", "-")
-            result = calculate(expression)
-            if result is not None:
-                speak(f"The result is {result}")
-                print(f"Result: {result}")
-        elif any(op in command for op in ["multiply by", "times", "*", "product"]):
-            expression = command.replace("multiply by", "*").replace("times", "*").replace("product", "*")
-            result = calculate(expression)
-            if result is not None:
-                speak(f"The result is {result}")
-                print(f"Result: {result}")
-        elif any(op in command for op in ["divide", "divided by", "/", "quotient"]):
-            expression = command.replace("divide", "/").replace("divided by", "/").replace("quotient", "/")
-            result = calculate(expression)
-            if result is not None:
-                speak(f"The result is {result}")
-                print(f"Result: {result}")
-        else:
-            speak("Command not recognized. Please try again.")
-            print("Command not recognized. Please try again.")
+def match_math_expression(text):
+    pattern = r'\b(?:\d+\.\d+|\d+)(?:\s*(?:\*\*|sqrt|square)\s*(?:\d+\.\d+|\d+)|\s*[\+\-\*\/]\s*(?:\d+\.\d+|\d+))+\b'
+    
+    match = re.search(pattern, text)
+    
+    if match:
+        return calculate(match.group())
+    else:
+        return None
+
+
+

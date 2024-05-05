@@ -746,136 +746,432 @@ nlu:
     - can you become a living mind?
     - can you become a living brain?
     - can you become a living body?
+    - what is your name 
+    - who are you
+    - what are you
 
 - intent: play_video
   examples: |
-    - play a video 
-    - play some songs 
-    - play 
-    - some video please
-    - play a movie
-    - play a film
-    - play some music videos
-    - play some cat videos
-    - play a random video
-    - play something interesting
-    - play a youtube video
-    - play something fun
-    - play something relaxing
-    - play something upbeat
-    - play something mellow
-    - play something energetic
-    - play something inspiring
-    - play something motivational
-    - play something soothing
-    - play something calming
-    - play something cheerful
-    - play something happy
-    - play something sad
-    - play something romantic
-    - play something dramatic
-    - play something action-packed
-    - play something adventurous
-    - play something scary
-    - play something mysterious
-    - play something suspenseful
-    - play something thrilling
-    - play something thought-provoking
-    - play something educational
-    - play something informative
-    - play something entertaining
-    - play something amusing
-    - play something hilarious
-    - play something funny
-    - play something silly
-    - play something absurd
-    - play something weird
-    - play something strange
-    - play something unusual
-    - play something bizarre
-    - play something extraordinary
-    - play something phenomenal
-    - play something mind-blowing
-    - play something mind-bending
-    - play something mind-expanding
-    - play something mind-boggling
-    - play something mind-altering
-    - play something mind-opening
-    - play something mind-enriching
-    - play something mind-stretching
-    - play something mind-challenging
-    - play something mind-invigorating
-    - play something mind-inspiring
-    - play something mind-uplifting
-    - play something mind-healing
-    - play something mind-calming
-    - play something mind-centering
-    - play something mind-grounding
-    - play something mind-balancing
-    - play something mind-nourishing
-    - play something mind-purifying
-    - play something mind-stimulating
-    - play something mind-refreshing
-    - play something mind-rejuvenating
-    - play something mind-regenerating
-    - play something mind-restoring
-    - play something mind-revitalizing
-    - play something mind-renewing
-    - play something mind-recharging
-    - play something mind-reinvigorating
-    - play something mind-reviving
-    - play something mind-reawakening
-    - play something mind-reenergizing
-    - play something mind-reinvigorating
-    - play something mind-rejuvenating
-    - play something mind-refreshing
-    - play something mind-regenerating
-    - play something mind-restoring
-    - play something mind-revitalizing
-    - play something mind-renewing
-    - play something mind-recharging
-    - play something mind-reinvigorating
-    - play something mind-reviving
-    - play something mind-reawakening
-    - play something mind-reenergizing
-    - play something mind-reinvigorating
-    - play something mind-rejuvenating
-    - play something mind-refreshing
-    - play something mind-regenerating
-    - play something mind-restoring
-    - play something mind-revitalizing
-    - play something mind-renewing
-    - play something mind-recharging
-    - play something mind-reinvigorating
-    - play something mind-reviving
-    - play something mind-reawakening
-    - play something mind-reenergizing
-    - play something mind-reinvigorating
-    - play something mind-rejuvenating
-    - play something mind-refreshing
-    - play something mind-regenerating
-    - play something mind-restoring
-    - play something mind-revitalizing
-    - play something mind-renewing
-    - play something mind-recharging
-    - play something mind-reinvigorating
-    - play something mind-reviving
-    - play something mind-reawakening
-    - play something mind-reenergizing
-    - play something mind-reinvigorating
-    - play something mind-rejuvenating
-    - play something mind-refreshing
-    - play something mind-regenerating
-    - play something mind-restoring
-    - play something mind-revitalizing
-    - play something mind-renewing
-    - play something mind-recharging
-    - play something mind-reinvigorating
-    - play something mind-reviving
-    - play something mind-reawakening
-    - play something mind-reenergizing
-    - play something mind-reinvigorating
-    - play something mind-rejuvenating
+    - can you play a video of [Chhatrapati Shivaji Maharaj](video_subject)
+    - run a movie about [space exploration](video_subject)
+    - could you show me a video on [cooking pasta](video_subject)
+    - start playing a documentary on [climate change](video_subject)
+    - I want to watch a film about [World War II](video_subject)
+    - please play a video on [machine learning](video_subject)
+    - play [Harry Potter movie](video_subject)
+    - run a video of [funny cats](video_subject)
+    - show me a movie starring [Leonardo DiCaprio](video_subject)
+    - can you play a video related to [history](video_subject)
+    - run a film by [Christopher Nolan](video_subject)
+    - please show me a video about [financial planning](video_subject)
+    - could you play a video on [quantum physics](video_subject)
+    - can you play [The Matrix movie](video_subject)
+    - start a video of [DIY home improvement](video_subject)
+    - run a documentary on [space exploration](video_subject)
+    - play a movie about [social justice](video_subject)
+    - show me a video about [personal finance](video_subject)
+    - can you play a video on [astronomy](video_subject)
+    - run [Inception movie](video_subject)
+    - show me a video of [cute puppies](video_subject)
+    - play a movie starring [Meryl Streep](video_subject)
+    - start a video related to [art history](video_subject)
+    - can you run a film by [Quentin Tarantino](video_subject)
+    - please play a video about [healthy cooking](video_subject)
+    - show me a movie about [artificial intelligence](video_subject)
+    - play [Star Wars movie](video_subject)
+    - start a video of [fail compilations](video_subject)
+    - run a documentary on [environmental issues](video_subject)
+    - could you play a film about [futuristic societies](video_subject)
+    - start a video about [travel tips](video_subject)
+    - play a movie about [physics experiments](video_subject)
+    - can you play [Forrest Gump movie](video_subject)
+    - show me a video of [adorable kittens](video_subject)
+    - run a movie starring [Brad Pitt](video_subject)
+    - play a video related to [ancient mythology](video_subject)
+    - could you show me a film by [Martin Scorsese](video_subject)
+    - start a video about [gardening tips](video_subject)
+    - play a movie about [virtual reality](video_subject)
+    - run a video on [artificial intelligence ethics](video_subject)
+    - please play [Schindler's List movie](video_subject)
+    - show me a video of [cute kittens](video_subject)
+    - start a documentary on [global warming](video_subject)
+    - play a film about [space exploration](video_subject)
+    - could you show me a video about [healthy recipes](video_subject)
+    - run a video on [mindfulness meditation](video_subject)
+    - play [Fight Club movie](video_subject)
+    - show me a movie starring [Emma Watson](video_subject)
+    - start a video related to [Medieval history](video_subject)
+    - can you play a film by [Stanley Kubrick](video_subject)
+    - run a video about [DIY crafts for home](video_subject)
+    - play a movie on [quantum mechanics](video_subject)
+    - could you show me [The Green Mile movie](video_subject)
+    - start a video of [baby animals playing](video_subject)
+    - run a documentary on [ocean conservation](video_subject)
+    - play a film about [artificial intelligence](video_subject)
+    - could you show me a video about [healthy lifestyle](video_subject)
+    - start a video on [positive thinking](video_subject)
+    - play [The Silence of the Lambs movie](video_subject)
+    - run a video of [funny dog videos](video_subject)
+    - show me a movie starring [Natalie Portman](video_subject)
+    - can you play a video related to [Renaissance art](video_subject)
+    - run a film by [Quentin Tarantino](video_subject)
+    - please show me a video about [DIY gardening](video_subject)
+    - play a movie on [robotics](video_subject)
+    - start [Goodfellas movie](video_subject)
+    - run a video of [cute baby animals](video_subject)
+    - play a documentary on [deforestation](video_subject)
+    - show me a film about [parallel universes](video_subject)
+    - start a video about [easy recipes](video_subject)
+    - play a movie on [public speaking](video_subject)
+    - can you play [The Lord of the Rings movie](video_subject)
+    - run a video of [funny animal videos](video_subject)
+    - start a movie starring [Denzel Washington](video_subject)
+    - play a video related to [Roman history](video_subject)
+    - could you show me a film by [Christopher Nolan](video_subject)
+    - start a video about [DIY crafts for home](video_subject)
+    - play a movie on [computer science](video_subject)
+    - can you run [The Godfather Part II movie](video_subject)
+    - start a video of [cute puppies playing](video_subject)
+    - play a documentary on [endangered species](video_subject)
+    - show me a film about [artificial intelligence](video_subject)
+    - start a video about [healthy recipes](video_subject)
+    - play a movie on [time management](video_subject)
+    - run [Interstellar movie](video_subject)
+    - show me a video of [baby pandas](video_subject)
+    - play a movie starring [Johnny Depp](video_subject)
+    - start a video related to [Egyptian history](video_subject)
+    - could you show me a film by [Quentin Tarantino](video_subject)
+    - play a video about [interior design](video_subject)
+    - run a video on [artificial intelligence ethics](video_subject)
+    - start [Schindler's List movie](video_subject)
+    - play a video of [cute kittens](video_subject)
+    - run a documentary on [global warming](video_subject)
+    - show me a film about [virtual reality](video_subject)
+    - start a video about [healthy lifestyle](video_subject)
+    - play a movie on [positive thinking](video_subject)
+    - run [The Silence of the Lambs movie](video_subject)
+    - show me a video of [funny dog videos](video_subject)
+    - start a movie starring [Natalie Portman](video_subject)
+    - play a video related to [Renaissance art](video_subject)
+    - could you show me a film by [Quentin Tarantino](video_subject)
+    - play a video about [DIY gardening](video_subject)
+    - run a movie on [robotics](video_subject)
+    - show [Goodfellas movie](video_subject)
+    - start a video of [cute baby animals](video_subject)
+    - play a documentary on [deforestation](video_subject)
+    - run a film about [parallel universes](video_subject)
+    - show me a video about [easy recipes](video_subject)
+    - play a movie on [public speaking](video_subject)
+    - can you play a video about [French cuisine](video_subject)
+    - run a video on [yoga poses](video_subject)
+    - start [The Shawshank Redemption movie](video_subject)
+    - play a video of [cute puppies](video_subject)
+    - run a documentary on [marine life](video_subject)
+    - show me a film about [art history](video_subject)
+    - start a video about [home organization](video_subject)
+    - play a movie on [quantum physics](video_subject)
+    - could you show me [The Dark Knight movie](video_subject)
+    - run a video of [hilarious pranks](video_subject)
+    - play a documentary on [ancient civilizations](video_subject)
+    - show me a film about [space exploration](video_subject)
+    - start a video about [DIY crafts](video_subject)
+    - play a movie on [meditation techniques](video_subject)
+    - can you play [The Godfather movie](video_subject)
+    - run a video about [healthy eating habits](video_subject)
+    - start [The Lord of the Rings movie](video_subject)
+    - play a video of [baby animals](video_subject)
+    - run a documentary on [climate change](video_subject)
+    - show me a film about [computer programming](video_subject)
+    - start a video about [healthy cooking](video_subject)
+    - play a movie on [personal finance](video_subject)
+    - can you play [Inception movie](video_subject)
+    - run a video of [adorable puppies](video_subject)
+    - start a documentary on [endangered animals](video_subject)
+    - play a movie about [ancient mythology](video_subject)
+    - could you show me [The Shawshank Redemption movie](video_subject)
+    - run a video about [DIY home improvement](video_subject)
+    - play a documentary on [sustainable living](video_subject)
+    - show me a film about [artificial intelligence](video_subject)
+    - start a video on [healthy living tips](video_subject)
+    - play a movie on [positive mindset](video_subject)
+    - can you play [Forrest Gump movie](video_subject)
+    - run a video of [cute kittens](video_subject)
+    - start a movie starring [Tom Hanks](video_subject)
+    - play a video related to [ancient history](video_subject)
+    - could you show me a film by [Steven Spielberg](video_subject)
+    - play a video about [interior decoration](video_subject)
+    - run a video on [quantum mechanics](video_subject)
+    - start [The Matrix movie](video_subject)
+    - play a video of [adorable puppies](video_subject)
+    - run a documentary on [wildlife conservation](video_subject)
+    - show me a film about [space travel](video_subject)
+    - start a video about [DIY home decor](video_subject)
+    - play a movie on [mindfulness meditation](video_subject)
+    - can you play [The Lion King movie](video_subject)
+    - run a video about [funny baby videos](video_subject)
+    - start a documentary on [environmental sustainability](video_subject)
+    - play a movie about [ancient civilizations](video_subject)
+    - could you show me [The Dark Knight Rises movie](video_subject)
+    - run a video about [healthy lifestyle](video_subject)
+    - start a video on [positive psychology](video_subject)
+    - play a movie about [space exploration](video_subject)
+    - can you play [Pulp Fiction movie](video_subject)
+    - run a video of [funny cat videos](video_subject)
+    - start a movie starring [Robert De Niro](video_subject)
+    - play a video related to [Greek mythology](video_subject)
+    - could you show me a film by [Alfred Hitchcock](video_subject)
+    - play a video about [home gardening](video_subject)
+    - run a video on [astronomy](video_subject)
+    - start [The Godfather Part II movie](video_subject)
+    - play a video of [cute kittens playing](video_subject)
+    - run a documentary on [marine conservation](video_subject)
+    - show me a film about [computer science](video_subject)
+    - start a video about [DIY home renovation](video_subject)
+    - play a movie on [art history](video_subject)
+    - can you play [The Green Mile movie](video_subject)
+    - run a video about [healthy recipes](video_subject)
+    - start a documentary on [wildlife protection](video_subject)
+    - play a movie about [space exploration](video_subject)
+    - could you show me [The Lord of the Rings: The Fellowship of the Ring movie](video_subject)
+    - run a video about [interior design ideas](video_subject)
+    - start a video on [healthy eating](video_subject)
+    - play a movie about [positive thinking](video_subject)
+    - can you play [The Godfather Part III movie](video_subject)
+    - run a video of [funny baby animals](video_subject)
+    - start a movie starring [Denzel Washington](video_subject)
+    - play a video related to [Roman history](video_subject)
+    - could you show me a film by [Quentin Tarantino](video_subject)
+    - play a video about [interior decoration](video_subject)
+    - run a video on [artificial intelligence ethics](video_subject)
+    - start [Schindler's List movie](video_subject)
+    - play a video of [cute kittens](video_subject)
+    - run a documentary on [global warming](video_subject)
+    - show me a film about [virtual reality](video_subject)
+    - start a video about [healthy lifestyle](video_subject)
+    - play a movie on [positive thinking](video_subject)
+    - run [The Silence of the Lambs movie](video_subject)
+    - show me a video of [funny dog videos](video_subject)
+    - start a movie starring [Natalie Portman](video_subject)
+    - play a video related to [Renaissance art](video_subject)
+    - could you show me a film by [Quentin Tarantino](video_subject)
+    - play a video about [DIY gardening](video_subject)
+    - run a movie on [robotics](video_subject)
+    - show [Goodfellas movie](video_subject)
+    - start a video of [cute baby animals](video_subject)
+    - play a documentary on [deforestation](video_subject)
+    - run a film about [parallel universes](video_subject)
+    - show me a video about [easy recipes](video_subject)
+    - play a movie on [public speaking](video_subject)
+    - can you play a video about [French cuisine](video_subject)
+    - run a video on [yoga poses](video_subject)
+    - start [The Shawshank Redemption movie](video_subject)
+    - play a video of [cute puppies](video_subject)
+    - run a documentary on [marine life](video_subject)
+    - show me a film about [art history](video_subject)
+    - start a video about [home organization](video_subject)
+    - play a movie on [quantum physics](video_subject)
+    - could you show me [The Dark Knight movie](video_subject)
+    - run a video of [hilarious pranks](video_subject)
+    - play a documentary on [ancient civilizations](video_subject)
+    - show me a film about [space exploration](video_subject)
+    - start a video about [DIY crafts](video_subject)
+    - play a movie on [meditation techniques](video_subject)
+    - can you play [The Godfather movie](video_subject)
+    - run a video about [healthy eating habits](video_subject)
+    - start [The Lord of the Rings movie](video_subject)
+    - play a video of [baby animals](video_subject)
+    - run a documentary on [climate change](video_subject)
+    - show me a film about [computer programming](video_subject)
+    - start a video about [healthy cooking](video_subject)
+    - play a movie on [personal finance](video_subject)
+    - can you play [Inception movie](video_subject)
+    - run a video of [adorable puppies](video_subject)
+    - start a documentary on [endangered animals](video_subject)
+    - play a movie about [ancient mythology](video_subject)
+    - could you show me [The Shawshank Redemption movie](video_subject)
+    - run a video about [DIY home improvement](video_subject)
+    - play a documentary on [sustainable living](video_subject)
+    - show me a film about [artificial intelligence](video_subject)
+    - start a video on [healthy living tips](video_subject)
+    - play a movie on [positive mindset](video_subject)
+    - can you play [Forrest Gump movie](video_subject)
+    - run a video of [cute kittens](video_subject)
+    - start a movie starring [Tom Hanks](video_subject)
+    - play a video related to [ancient history](video_subject)
+    - could you show me a film by [Steven Spielberg](video_subject)
+    - play a video about [interior decoration](video_subject)
+    - run a video on [quantum mechanics](video_subject)
+    - start [The Matrix movie](video_subject)
+    - play a video of [adorable puppies](video_subject)
+    - run a documentary on [wildlife conservation](video_subject)
+    - show me a film about [space travel](video_subject)
+    - start a video about [DIY home decor](video_subject)
+    - play a movie on [mindfulness meditation](video_subject)
+    - can you play [The Lion King movie](video_subject)
+    - run a video about [funny baby videos](video_subject)
+    - start a documentary on [environmental sustainability](video_subject)
+    - play a movie about [ancient civilizations](video_subject)
+    - could you show me [The Dark Knight Rises movie](video_subject)
+    - run a video about [healthy lifestyle](video_subject)
+    - start a video on [positive psychology](video_subject)
+    - play a movie about [space exploration](video_subject)
+    - can you play [Pulp Fiction movie](video_subject)
+    - run a video of [funny cat videos](video_subject)
+    - start a movie starring [Robert De Niro](video_subject)
+    - play a video related to [Greek mythology](video_subject)
+    - could you show me a film by [Alfred Hitchcock](video_subject)
+    - play a video about [home gardening](video_subject)
+    - run a video on [astronomy](video_subject)
+    - start [The Godfather Part II movie](video_subject)
+    - play a video of [cute kittens playing](video_subject)
+    - run a documentary on [marine conservation](video_subject)
+    - show me a film about [computer science](video_subject)
+    - start a video about [DIY home renovation](video_subject)
+    - play a movie on [art history](video_subject)
+    - can you play [The Green Mile movie](video_subject)
+    - run a video about [healthy recipes](video_subject)
+    - start a documentary on [wildlife protection](video_subject)
+    - play a movie about [space exploration](video_subject)
+    - could you show me [The Lord of the Rings: The Fellowship of the Ring movie](video_subject)
+    - run a video about [interior design ideas](video_subject)
+    - start a video on [healthy eating](video_subject)
+    - play a movie about [positive thinking](video_subject)
+    - can you play [The Godfather Part III movie](video_subject)
+    - run a video of [funny baby animals](video_subject)
+    - start a movie starring [Denzel Washington](video_subject)
+    - play a video related to [Roman history](video_subject)
+    - could you show me a film by [Quentin Tarantino](video_subject)
+    - play a video about [interior decoration](video_subject)
+    - run a video on [artificial intelligence ethics](video_subject)
+    - start [Schindler's List movie](video_subject)
+    - play a video of [cute kittens](video_subject)
+    - run a documentary on [global warming](video_subject)
+    - show me a film about [virtual reality](video_subject)
+    - start a video about [healthy lifestyle](video_subject)
+    - play a movie on [positive thinking](video_subject)
+    - run [The Silence of the Lambs movie](video_subject)
+    - show me a video of [funny dog videos](video_subject)
+    - start a movie starring [Natalie Portman](video_subject)
+    - play a video related to [Renaissance art](video_subject)
+    - could you show me a film by [Quentin Tarantino](video_subject)
+    - play a video about [DIY gardening](video_subject)
+    - run a movie on [robotics](video_subject)
+    - show [Goodfellas movie](video_subject)
+    - start a video of [cute baby animals](video_subject)
+    - play a documentary on [deforestation](video_subject)
+    - run a film about [parallel universes](video_subject)
+    - show me a video about [easy recipes](video_subject)
+    - play a movie on [public speaking](video_subject)
+    - can you play a video about [French cuisine](video_subject)
+    - run a video on [yoga poses](video_subject)
+    - start [The Shawshank Redemption movie](video_subject)
+    - play a video of [cute puppies](video_subject)
+    - run a documentary on [marine life](video_subject)
+    - show me a film about [art history](video_subject)
+    - start a video about [home organization](video_subject)
+    - play a movie on [quantum physics](video_subject)
+    - could you show me [The Dark Knight movie](video_subject)
+    - run a video of [hilarious pranks](video_subject)
+    - play a documentary on [ancient civilizations](video_subject)
+    - show me a film about [space exploration](video_subject)
+    - start a video about [DIY crafts](video_subject)
+    - play a movie on [meditation techniques](video_subject)
+    - can you play [The Godfather movie](video_subject)
+    - run a video about [healthy eating habits](video_subject)
+    - start [The Lord of the Rings movie](video_subject)
+    - play a video of [baby animals](video_subject)
+    - run a documentary on [climate change](video_subject)
+    - show me a film about [computer programming](video_subject)
+    - start a video about [healthy cooking](video_subject)
+    - play a movie on [personal finance](video_subject)
+    - can you play [Inception movie](video_subject)
+    - run a video of [adorable puppies](video_subject)
+    - start a documentary on [endangered animals](video_subject)
+    - play a movie about [ancient mythology](video_subject)
+    - could you show me [The Shawshank Redemption movie](video_subject)
+    - run a video about [DIY home improvement](video_subject)
+    - play a documentary on [sustainable living](video_subject)
+    - show me a film about [artificial intelligence](video_subject)
+    - start a video on [healthy living tips](video_subject)
+    - play a movie on [positive mindset](video_subject)
+    - can you play [Forrest Gump movie](video_subject)
+    - run a video of [cute kittens](video_subject)
+    - start a movie starring [Tom Hanks](video_subject)
+    - play a video related to [ancient history](video_subject)
+    - could you show me a film by [Steven Spielberg](video_subject)
+    - play a video about [interior decoration](video_subject)
+    - run a video on [quantum mechanics](video_subject)
+    - start [The Matrix movie](video_subject)
+    - play a video of [adorable puppies](video_subject)
+    - run a documentary on [wildlife conservation](video_subject)
+    - show me a film about [space travel](video_subject)
+    - start a video about [DIY home decor](video_subject)
+    - play a movie on [mindfulness meditation](video_subject)
+    - can you play [The Lion King movie](video_subject)
+    - run a video about [funny baby videos](video_subject)
+    - start a documentary on [environmental sustainability](video_subject)
+    - play a movie about [ancient civilizations](video_subject)
+    - could you show me [The Dark Knight Rises movie](video_subject)
+    - run a video about [healthy lifestyle](video_subject)
+    - start a video on [positive psychology](video_subject)
+    - play a movie about [space exploration](video_subject)
+    - can you play [Pulp Fiction movie](video_subject)
+    - run a video of [funny cat videos](video_subject)
+    - start a movie starring [Robert De Niro](video_subject)
+    - play a video related to [Greek mythology](video_subject)
+    - could you show me a film by [Alfred Hitchcock](video_subject)
+    - play a video about [home gardening](video_subject)
+    - run a video on [astronomy](video_subject)
+    - start [The Godfather Part II movie](video_subject)
+    - play a video of [cute kittens playing](video_subject)
+    - run a documentary on [marine conservation](video_subject)
+    - show me a film about [computer science](video_subject)
+    - start a video about [DIY home renovation](video_subject)
+    - play a movie on [art history](video_subject)
+    - can you play [The Green Mile movie](video_subject)
+    - run a video about [healthy recipes](video_subject)
+    - start a documentary on [wildlife protection](video_subject)
+    - play a movie about [space exploration](video_subject)
+    - could you show me [The Lord of the Rings: The Fellowship of the Ring movie](video_subject)
+    - run a video about [interior design ideas](video_subject)
+    - start a video on [healthy eating](video_subject)
+    - play a movie about [positive thinking](video_subject)
+    - can you play [The Godfather Part III movie](video_subject)
+    - run a video of [funny baby animals](video_subject)
+    - start a movie starring [Denzel Washington](video_subject)
+    - play a video related to [Roman history](video_subject)
+    - could you show me a film by [Quentin Tarantino](video_subject)
+    - play a video about [interior decoration](video_subject)
+    - run a video on [artificial intelligence ethics](video_subject)
+    - start [Schindler's List movie](video_subject)
+    - play a video of [cute kittens](video_subject)
+    - run a documentary on [global warming](video_subject)
+    - show me a film about [virtual reality](video_subject)
+    - start a video about [healthy lifestyle](video_subject)
+    - play a movie on [positive thinking](video_subject)
+    - run [The Silence of the Lambs movie](video_subject)
+    - show me a video of [funny dog videos](video_subject)
+    - start a movie starring [Natalie Portman](video_subject)
+    - play a video related to [Renaissance art](video_subject)
+    - could you show me a film by [Quentin Tarantino](video_subject)
+    - play a video about [DIY gardening](video_subject)
+    - run a movie on [robotics](video_subject)
+    - show [Goodfellas movie](video_subject)
+    - start a video of [cute baby animals](video_subject)
+    - play a documentary on [deforestation](video_subject)
+    - run a film about [parallel universes](video_subject)
+    - show me a video about [easy recipes](video_subject)
+    - play a movie on [public speaking](video_subject)
+    - can you play a video about [French cuisine](video_subject)
+    - run a video on [yoga poses](video_subject)
+    - start [The Shawshank Redemption movie](video_subject)
+    - play a video of [cute puppies](video_subject)
+    - run a documentary on [marine life](video_subject)
+    - show me a film about [art history](video_subject)
+    - start a video about [home organization](video_subject)
+    - play a movie on [quantum physics](video_subject)
+    - could you show me [The Dark Knight movie](video_subject)
+    - run a video of [hilarious pranks](video_subject)
 
 - intent: take_ss
   examples: |
@@ -915,527 +1211,438 @@ nlu:
 
 - intent: web_search
   examples: |
-    - search
-    - information
-    - find
-    - search this 
-    - search it  
-    - search for it
-    - search for information
-    - search for this
-    - search for that
-    - find this
-    - find that
-    - find information
-    - find something
-    - search something
-    - search for something
-    - find what I'm looking for
-    - search what I'm looking for
-    - search for what I'm looking for
-    - find what I need
-    - search what I need
-    - search for what I need
-    - find what I want
-    - search what I want
-    - search for what I want
-    - find what I'm interested in
-    - search what I'm interested in
-    - search for what I'm interested in
-    - find what I'm curious about
-    - search what I'm curious about
-    - search for what I'm curious about
-    - find what I'm searching for
-    - search what I'm searching for
-    - search for what I'm searching for
-    - find what I'm seeking
-    - search what I'm seeking
-    - search for what I'm seeking
-    - find what I'm exploring
-    - search what I'm exploring
-    - search for what I'm exploring
-    - find what I'm investigating
-    - search what I'm investigating
-    - search for what I'm investigating
-    - find what I'm examining
-    - search what I'm examining
-    - search for what I'm examining
-    - find what I'm checking out
-    - search what I'm checking out
-    - search for what I'm checking out
-    - find what I'm browsing
-    - search what I'm browsing
-    - search for what I'm browsing
-    - find what I'm looking up
-    - search what I'm looking up
-    - search for what I'm looking up
-    - find what I'm searching up
-    - search what I'm searching up
-    - search for what I'm searching up
-    - find what I'm checking
-    - search what I'm checking
-    - search for what I'm checking
-    - find what I'm investigating
-    - search what I'm investigating
-    - search for what I'm investigating
-    - find what I'm exploring
-    - search what I'm exploring
-    - search for what I'm exploring
-    - find what I'm seeking
-    - search what I'm seeking
-    - search for what I'm seeking
-    - find what I'm looking for online
-    - search what I'm looking for online
-    - search for what I'm looking for online
-    - find what I'm searching for online
-    - search what I'm searching for online
-    - search for what I'm searching for online
-    - find what I'm seeking online
-    - search what I'm seeking online
-    - search for what I'm seeking online
-    - find what I'm investigating online
-    - search what I'm investigating online
-    - search for what I'm investigating online
-    - find what I'm exploring online
-    - search what I'm exploring online
-    - search for what I'm exploring online
-    - find what I'm checking online
-    - search what I'm checking online
-    - search for what I'm checking online
-    - find what I'm examining online
-    - search what I'm examining online
-    - search for what I'm examining online
-    - find what I'm looking up online
-    - search what I'm looking up online
-    - search for what I'm looking up online
-    - find what I'm searching up online
-    - search what I'm searching up online
-    - search for what I'm searching up online
-    - find what I'm browsing online
-    - search what I'm browsing online
-    - search for what I'm browsing online
-    - find what I'm looking for on the internet
-    - search what I'm looking for on the internet
-    - search for what I'm looking for on the internet
-    - find what I'm searching for on the internet
-    - search what I'm searching for on the internet
-    - search for what I'm searching for on the internet
-    - find what I'm seeking on the internet
-    - search what I'm seeking on the internet
-    - search for what I'm seeking on the internet
-    - find what I'm investigating on the internet
-    - search what I'm investigating on the internet
-    - search for what I'm investigating on the internet
-    - find what I'm exploring on the internet
-    - search what I'm exploring on the internet
-    - search for what I'm exploring on the internet
-    - find what I'm checking on the internet
-    - search what I'm checking on the internet
-    - search for what I'm checking on the internet
-    - find what I'm examining on the internet
-    - search what I'm examining on the internet
-    - search for what I'm examining on the internet
-    - find what I'm looking up on the internet
-    - search what I'm looking up on the internet
-    - search for what I'm looking up on the internet
-    - find what I'm searching up on the internet
-    - search what I'm searching up on the internet
-    - search for what I'm searching up on the internet
-    - find what I'm browsing on the internet
-    - search what I'm browsing on the internet
-    - search for what I'm browsing on the internet
-    - find what I'm looking for on the web
-    - search what I'm looking for on the web
-    - search for what I'm looking for on the web
-    - find what I'm searching for on the web
-    - search what I'm searching for on the web
-    - search for what I'm searching for on the web
-    - find what I'm seeking on the web
-    - search what I'm seeking on the web
-    - search for what I'm seeking on the web
-    - find what I'm investigating on the web
-    - search what I'm investigating on the web
-    - search for what I'm investigating on the web
-    - find what I'm exploring on the web
-    - search what I'm exploring on the web
-    - search for what I'm exploring on the web
-    - find what I'm checking on the web
-    - search what I'm checking on the web
-    - search for what I'm checking on the web
-    - find what I'm examining on the web
-    - search what I'm examining on the web
-    - search for what I'm examining on the web
-    - find what I'm looking up on the web
-    - search what I'm looking up on the web
-    - search for what I'm looking up on the web
-    - find what I'm searching up on the web
-    - search what I'm searching up on the web
-    - search for what I'm searching up on the web
-    - find what I'm browsing on the web
-    - search what I'm browsing on the web
-    - search for what I'm browsing on the web
-    - find what I'm looking for on the world wide web
-    - search what I'm looking for on the world wide web
-    - search for what I'm looking for on the world wide web
-    - find what I'm searching for on the world wide web
-    - search what I'm searching for on the world wide web
-    - search for what I'm searching for on the world wide web
-    - find what I'm seeking on the world wide web
-    - search what I'm seeking on the world wide web
-    - search for what I'm seeking on the world wide web
-    - find what I'm investigating on the world wide web
-    - search what I'm investigating on the world wide web
-    - search for what I'm investigating on the world wide web
-    - find what I'm exploring on the world wide web
-    - search what I'm exploring on the world wide web
-    - search for what I'm exploring on the world wide web
-    - find what I'm checking on the world wide web
-    - search what I'm checking on the world wide web
-    - search for what I'm checking on the world wide web
-    - find what I'm examining on the world wide web
-    - search what I'm examining on the world wide web
-    - search for what I'm examining on the world wide web
-    - find what I'm looking up on the world wide web
-    - search what I'm looking up on the world wide web
-    - search for what I'm looking up on the world wide web
-    - find what I'm searching up on the world wide web
-    - search what I'm searching up on the world wide web
-    - search for what I'm searching up on the world wide web
-    - find what I'm browsing on the world wide web
-    - search what I'm browsing on the world wide web
-    - search for what I'm browsing on the world wide web
-    - find what I'm looking for on the net
-    - search what I'm looking for on the net
-    - search for what I'm looking for on the net
-    - find what I'm searching for on the net
-    - search what I'm searching for on the net
-    - search for what I'm searching for on the net
-    - find what I'm seeking on the net
-    - search what I'm seeking on the net
-    - search for what I'm seeking on the net
-    - find what I'm investigating on the net
-    - search what I'm investigating on the net
-    - search for what I'm investigating on the net
-    - find what I'm exploring on the net
-    - search what I'm exploring on the net
-    - search for what I'm exploring on the net
-    - find what I'm checking on the net
-    - search what I'm checking on the net
-    - search for what I'm checking on the net
-    - find what I'm examining on the net
-    - search what I'm examining on the net
-    - search for what I'm examining on the net
-    - find what I'm looking up on the net
-    - search what I'm looking up on the net
-    - search for what I'm looking up on the net
-    - find what I'm searching up on the net
-    - search what I'm searching up on the net
-    - search for what I'm searching up on the net
-    - find what I'm browsing on the net
-    - search what I'm browsing on the net
-    - search for what I'm browsing on the net
-    - find what I'm looking for online
-    - search what I'm looking for online
-    - search for what I'm looking for online
-    - find what I'm searching for online
-    - search what I'm searching for online
-    - search for what I'm searching for online
-    - find what I'm seeking online
-    - search what I'm seeking online
-    - search for what I'm seeking online
-    - find what I'm investigating online
-    - search what I'm investigating online
-    - search for what I'm investigating online
-    - find what I'm exploring online
-    - search what I'm exploring online
-    - search for what I'm exploring online
-    - find what I'm checking online
-    - search what I'm checking online
-    - search for what I'm checking online
-    - find what I'm examining online
-    - search what I'm examining online
-    - search for what I'm examining online
-    - find what I'm looking up online
-    - search what I'm looking up online
-    - search for what I'm looking up online
-    - find what I'm searching up online
-    - search what I'm searching up online
-    - search for what I'm searching up online
-    - find what I'm browsing online
-    - search what I'm browsing online
-    - search for what I'm browsing online
-    - find what I'm looking for on the internet
-    - search what I'm looking for on the internet
-    - search for what I'm looking for on the internet
-    - find what I'm searching for on the internet
-    - search what I'm searching for on the internet
-    - search for what I'm searching for on the internet
-    - find what I'm seeking on the internet
-    - search what I'm seeking on the internet
-    - search for what I'm seeking on the internet
-    - find what I'm investigating on the internet
-    - search what I'm investigating on the internet
-    - search for what I'm investigating on the internet
-    - find what I'm exploring on the internet
-    - search what I'm exploring on the internet
-    - search for what I'm exploring on the internet
-    - find what I'm checking on the internet
-    - search what I'm checking on the internet
-    - search for what I'm checking on the internet
-    - find what I'm examining on the internet
-    - search what I'm examining on the internet
-    - search for what I'm examining on the internet
-    - find what I'm looking up on the internet
-    - search what I'm looking up on the internet
-    - search for what I'm looking up on the internet
-    - find what I'm searching up on the internet
-    - search what I'm searching up on the internet
-    - search for what I'm searching up on the internet
-    - find what I'm browsing on the internet
-    - search what I'm browsing on the internet
-    - search for what I'm browsing on the internet
-    - find what I'm looking for on the web
-    - search what I'm looking for on the web
-    - search for what I'm looking for on the web
-    - find what I'm searching for on the web
-    - search what I'm searching for on the web
-    - search for what I'm searching for on the web
-    - find what I'm seeking on the web
-    - search what I'm seeking on the web
-    - search for what I'm seeking on the web
-    - find what I'm investigating on the web
-    - search what I'm investigating on the web
-    - search for what I'm investigating on the web
-    - find what I'm exploring on the web
-    - search what I'm exploring on the web
-    - search for what I'm exploring on the web
-    - find what I'm checking on the web
-    - search what I'm checking on the web
-    - search for what I'm checking on the web
-    - find what I'm examining on the web
-    - search what I'm examining on the web
-    - search for what I'm examining on the web
-    - find what I'm looking up on the web
-    - search what I'm looking up on the web
-    - search for what I'm looking up on the web
-    - find what I'm searching up on the web
-    - search what I'm searching up on the web
-    - search for what I'm searching up on the web
-    - find what I'm browsing on the web
-    - search what I'm browsing on the web
-    - search for what I'm browsing on the web
-    - find what I'm looking for on the world wide web
-    - search what I'm looking for on the world wide web
-    - search for what I'm looking for on the world wide web
-    - find what I'm searching for on the world wide web
-    - search what I'm searching for on the world wide web
-    - search for what I'm searching for on the world wide web
-    - find what I'm seeking on the world wide web
-    - search what I'm seeking on the world wide web
-    - search for what I'm seeking on the world wide web
-    - find what I'm investigating on the world wide web
-    - search what I'm investigating on the world wide web
-    - search for what I'm investigating on the world wide web
-    - find what I'm exploring on the world wide web
-    - search what I'm exploring on the world wide web
-    - search for what I'm exploring on the world wide web
-    - find what I'm checking on the world wide web
-    - search what I'm checking on the world wide web
-    - search for what I'm checking on the world wide web
-    - find what I'm examining on the world wide web
-    - search what I'm examining on the world wide web
-    - search for what I'm examining on the world wide web
-    - find what I'm looking up on the world wide web
-    - search what I'm looking up on the world wide web
-    - search for what I'm looking up on the world wide web
-    - find what I'm searching up on the world wide web
-    - search what I'm searching up on the world wide web
-    - search for what I'm searching up on the world wide web
-    - find what I'm browsing on the world wide web
-    - search what I'm browsing on the world wide web
-    - search for what I'm browsing on the world wide web
+    - search for [the best pizza places in New York](query)
+    - find [information about space exploration](query)
+    - search for [a recipe for chocolate cake](query)
+    - can you [look up the weather forecast for tomorrow](query)?
+    - find [news articles about technology](query)
+    - search for [the lyrics of a song](query)
+    - look up [information on COVID-19](query)
+    - find [reviews for restaurants in San Francisco](query)
+    - search for [tutorials on machine learning](query)
+    - find [videos about DIY projects](query)
+    - look up [interesting facts about space](query)
+    - find [recipes for pasta dishes](query)
+    - search for [the latest news on climate change](query)
+    - look up [the meaning of a word](query)
+    - find [scientific studies about COVID-19 vaccines](query)
+    - search for [the best hiking trails in California](query)
+    - look up [travel tips for backpacking in Europe](query)
+    - find [articles about mindfulness meditation](query)
+    - search for [the history of Ancient Rome](query)
+    - look up [book recommendations for sci-fi novels](query)
+    - find [healthy recipes for vegetarian meals](query)
+    - search for [job listings in software engineering](query)
+    - look up [the symptoms of common cold](query)
+    - find [podcasts about true crime](query)
+    - search for [the best budget smartphones in 2024](query)
+    - look up [DIY skincare recipes for glowing skin](query)
+    - find [articles about remote work productivity](query)
+    - search for [the best budget-friendly vacations for 2024](query)
+    - look up [tips for improving sleep quality](query)
+    - find [articles about parenting advice for new moms](query)
+    - search for [the top educational apps for children](query)
+    - look up [recipes for healthy smoothies](query)
+    - find [articles about sustainable fashion](query)
+    - search for [the best budgeting apps for 2024](query)
+    - look up [home cleaning hacks for saving time](query)
+    - find [articles about effective communication skills](query)
+    - search for [the latest scientific discoveries in 2024](query)
+    - look up [travel hacks for finding cheap flights](query)
+    - find [articles about work-life balance strategies](query)
+    - search for [the best budget-friendly recipes for 2024](query)
+    - look up [gardening tips for growing vegetables](query)
+    - find [articles about professional networking tips](query)
+    - search for [the top podcasts of 2024](query)
+    - look up [DIY haircare recipes for healthy hair](query)
+    - find [articles about leadership development skills](query)
+    - search for [the latest entertainment news in 2024](query)
+    - look up [yoga poses for stress relief](query)
+    - find [articles about resume writing tips](query)
+    - search for [the best budget smartphones for 2024](query)
+    - look up [mental health exercises for anxiety relief](query)
+    - find [articles about effective public speaking techniques](query)
+    - search for [the top travel destinations of 2024](query)
+    - look up [home renovation ideas for small spaces](query)
+    - find [articles about effective study habits](query)
+    - search for [the best budget-friendly cars for 2024](query)
+    - look up [healthy snack ideas for work](query)
+    - find [articles about digital marketing strategies](query)
+    - search for [the best online courses for learning Python](query)
+    - look up [cooking techniques for grilling steak](query)
+    - find [articles about time management skills](query)
+    - search for [the top music albums of 2024](query)
+    - look up [tips for saving money on groceries](query)
+    - find [articles about home gardening tips](query)
+    - search for [the best hiking trails in 2024](query)
+    - look up [fitness challenges for losing weight](query)
+    - find [articles about personal finance management](query)
+    - search for [the most anticipated books of 2024](query)
+    - look up [recipes for homemade pizza](query)
+    - find [articles about career development strategies](query)
+    - search for [the latest technology trends in 2024](query)
+    - look up [DIY skincare recipes for glowing skin](query)
+    - find [articles about remote work productivity](query)
+    - search for [the best budget-friendly vacations for 2024](query)
+    - look up [tips for improving sleep quality](query)
+    - find [articles about parenting advice for new moms](query)
+    - search for [the top educational apps for children](query)
+    - look up [recipes for healthy smoothies](query)
+    - find [articles about sustainable fashion](query)
+    - search for [the best budgeting apps for 2024](query)
+    - look up [home cleaning hacks for saving time](query)
+    - find [articles about effective communication skills](query)
+    - search for [the latest scientific discoveries in 2024](query)
+    - look up [travel hacks for finding cheap flights](query)
+    - find [articles about work-life balance strategies](query)
+    - search for [the best budget-friendly recipes for 2024](query)
+    - look up [gardening tips for growing vegetables](query)
+    - find [articles about professional networking tips](query)
+    - search for [the top podcasts of 2024](query)
+    - look up [DIY haircare recipes for healthy hair](query)
+    - find [articles about leadership development skills](query)
+    - search for [the latest entertainment news in 2024](query)
+    - look up [yoga poses for stress relief](query)
+    - find [articles about resume writing tips](query)
+    - search for [the best budget smartphones for 2024](query)
+    - look up [mental health exercises for anxiety relief](query)
+    - find [articles about effective public speaking techniques](query)
+    - search for [the top travel destinations of 2024](query)
+    - look up [home renovation ideas for small spaces](query)
+    - find [articles about effective study habits](query)
+    - search for [the best budget-friendly cars for 2024](query)
+    - look up [healthy snack ideas for work](query)
+    - find [articles about digital marketing strategies](query)
+    - search for [the best online courses for learning Python](query)
+    - look up [cooking techniques for grilling steak](query)
+    - find [articles about time management skills](query)
+    - search for [the top music albums of 2024](query)
+    - look up [tips for saving money on groceries](query)
+    - find [articles about home gardening tips](query)
+    - search for [the best hiking trails in 2024](query)
+    - look up [fitness challenges for losing weight](query)
+    - find [articles about personal finance management](query)
+    - search for [the most anticipated books of 2024](query)
+    - look up [recipes for homemade pizza](query)
+    - find [articles about career development strategies](query)
+    - search for [the latest technology trends in 2024](query)
+    - look up [DIY skincare recipes for glowing skin](query)
+    - find [articles about remote work productivity](query)
+    - search for [the best budget-friendly vacations for 2024](query)
+    - look up [tips for improving sleep quality](query)
+    - find [articles about parenting advice for new moms](query)
+    - search for [the top educational apps for children](query)
+    - look up [recipes for healthy smoothies](query)
+    - find [articles about sustainable fashion](query)
+    - search for [the best budgeting apps for 2024](query)
+    - look up [home cleaning hacks for saving time](query)
+    - find [articles about effective communication skills](query)
+    - search for [the latest scientific discoveries in 2024](query)
+    - look up [travel hacks for finding cheap flights](query)
+    - find [articles about work-life balance strategies](query)
+    - search for [the best budget-friendly recipes for 2024](query)
+    - look up [gardening tips for growing vegetables](query)
+    - find [articles about professional networking tips](query)
+    - search for [the top podcasts of 2024](query)
+    - look up [DIY haircare recipes for healthy hair](query)
+    - find [articles about leadership development skills](query)
+    - search for [the latest entertainment news in 2024](query)
+    - look up [yoga poses for stress relief](query)
+    - find [articles about resume writing tips](query)
+    - search for [the best budget smartphones for 2024](query)
+    - look up [mental health exercises for anxiety relief](query)
+    - find [articles about effective public speaking techniques](query)
+    - search for [the top travel destinations of 2024](query)
+    - look up [home renovation ideas for small spaces](query)
+    - find [articles about effective study habits](query)
+    - search for [the best budget-friendly cars for 2024](query)
+    - look up [healthy snack ideas for work](query)
+    - find [articles about digital marketing strategies](query)
+    - search for [the best online courses for learning Python](query)
+    - look up [cooking techniques for grilling steak](query)
+    - find [articles about time management skills](query)
+    - search for [the top music albums of 2024](query)
+    - look up [tips for saving money on groceries](query)
+    - find [articles about home gardening tips](query)
+    - search for [the best hiking trails in 2024](query)
+    - look up [fitness challenges for losing weight](query)
+    - find [articles about personal finance management](query)
+    - search for [the most anticipated books of 2024](query)
+    - look up [recipes for homemade pizza](query)
+    - find [articles about career development strategies](query)
+    - search for [the latest technology trends in 2024](query)
+    - look up [DIY skincare recipes for glowing skin](query)
+    - find [articles about remote work productivity](query)
+    - search for [the best budget-friendly vacations for 2024](query)
+    - look up [tips for improving sleep quality](query)
+    - find [articles about parenting advice for new moms](query)
+    - search for [the top educational apps for children](query)
+    - look up [recipes for healthy smoothies](query)
+    - find [articles about sustainable fashion](query)
+    - search for [the best budgeting apps for 2024](query)
+    - look up [home cleaning hacks for saving time](query)
+    - find [articles about effective communication skills](query)
+    - search for [the latest scientific discoveries in 2024](query)
+    - look up [travel hacks for finding cheap flights](query)
+    - find [articles about work-life balance strategies](query)
+    - search for [the best budget-friendly recipes for 2024](query)
+    - look up [gardening tips for growing vegetables](query)
+    - find [articles about professional networking tips](query)
+    - search for [the top podcasts of 2024](query)
+    - look up [DIY haircare recipes for healthy hair](query)
+    - find [articles about leadership development skills](query)
+    - search for [the latest entertainment news in 2024](query)
+    - look up [yoga poses for stress relief](query)
+    - find [articles about resume writing tips](query)
+    - search for [the best budget smartphones for 2024](query)
+    - look up [mental health exercises for anxiety relief](query)
+    - find [articles about effective public speaking techniques](query)
+    - search for [the top travel destinations of 2024](query)
+    - look up [home renovation ideas for small spaces](query)
+    - find [articles about effective study habits](query)
+    - search for [the best budget-friendly cars for 2024](query)
+    - look up [healthy snack ideas for work](query)
+    - find [articles about digital marketing strategies](query)
+    - search for [the best online courses for learning Python](query)
+    - look up [cooking techniques for grilling steak](query)
+    - find [articles about time management skills](query)
+    - search for [the top music albums of 2024](query)
+    - look up [tips for saving money on groceries](query)
+    - find [articles about home gardening tips](query)
+    - search for [the best hiking trails in 2024](query)
+    - look up [fitness challenges for losing weight](query)
+    - find [articles about personal finance management](query)
+    - search for [the most anticipated books of 2024](query)
+    - look up [recipes for homemade pizza](query)
+    - find [articles about career development strategies](query)
+    - search for [the latest technology trends in 2024](query)
+    - look up [DIY skincare recipes for glowing skin](query)
+    - find [articles about remote work productivity](query)
+    - search for [the best budget-friendly vacations for 2024](query)
+    - look up [tips for improving sleep quality](query)
+    - find [articles about parenting advice for new moms](query)
+    - search for [the top educational apps for children](query)
+    - look up [recipes for healthy smoothies](query)
+    - find [articles about sustainable fashion](query)
+    - search for [the best budgeting apps for 2024](query)
+    - look up [home cleaning hacks for saving time](query)
+    - find [articles about effective communication skills](query)
+    - search for [the latest scientific discoveries in 2024](query)
+    - look up [travel hacks for finding cheap flights](query)
+    - find [articles about work-life balance strategies](query)
+    - search for [the best budget-friendly recipes for 2024](query)
+    - look up [gardening tips for growing vegetables](query)
+    - find [articles about professional networking tips](query)
+    - search for [the top podcasts of 2024](query)
+    - look up [DIY haircare recipes for healthy hair](query)
+    - find [articles about leadership development skills](query)
+    - search for [the latest entertainment news in 2024](query)
+    - look up [yoga poses for stress relief](query)
+    - find [articles about resume writing tips](query)
+  
 - intent: set_reminder
   examples: |
-    - remind me to water the plants
-    - create a reminder for the dentist checkup
-    - set a reminder for the project submission
-    - remind me about the report review
-    - create a reminder for the team brainstorming session
-    - set a reminder for the webinar registration
-    - remind me about the workshop attendance
-    - create a reminder for the job interview
-    - set a reminder for the movie night with friends
-    - remind me to do laundry
-    - create a reminder for the client meeting
-    - set a reminder for the project kickoff
-    - remind me about the dentist appointment
-    - create a reminder for the doctor's visit
-    - set a reminder for the online training session
-    - remind me to pay the rent
-    - create a reminder for the team building activity
-    - set a reminder for the webinar presentation
-    - remind me about the training workshop
-    - create a reminder for grocery shopping
-    - set a reminder for the client conference call
-    - remind me to submit the monthly report
-    - create a reminder for the annual health checkup
-    - set a reminder for the product launch event
-    - remind me about the deadline for the project proposal
-    - create a reminder for the family gathering
-    - set a reminder for the department meeting
-    - remind me to walk the dog
-    - create a reminder for the dentist appointment
-    - set a reminder for the project review
-    - remind me to renew the subscription
-    - create a reminder for the doctor's appointment
-    - set a reminder for the webinar session
-    - remind me about the training schedule
-    - create a reminder for the house cleaning
-    - set a reminder for the conference call
-    - remind me to update the software
-    - create a reminder for the team outing
-    - set a reminder for the client presentation
-    - remind me about the deadline for the assignment
-    - create a reminder for the parent-teacher meeting
-    - set a reminder for the project status update
-    - remind me to water the garden
-    - create a reminder for the car service
-    - set a reminder for the webinar workshop
-    - remind me about the training program
-    - create a reminder for the dentist follow-up
-    - set a reminder for the project discussion
-    - remind me to check the mail
+    - remind me to [call John](task) at [5 PM](time)
+    - set a reminder for [buying groceries](task) tomorrow at [10 AM](time)
+    - remind me to [send the report](task) on [Friday](date) at [3 PM](time)
+    - set a reminder for [doctor's appointment](task) on [Monday](date) at [9 AM](time)
+    - remind me to [water the plants](task) at [6 PM](time) today
+    - set a reminder for [paying bills](task) on [the 15th of this month](date) at [7 PM](time)
+    - remind me to [attend the meeting](task) at [11 AM](time) on [Wednesday](date)
+    - set a reminder for [submitting the project](task) by [next Friday](date) at [5 PM](time)
+    - remind me to [pick up dry cleaning](task) at [noon](time) tomorrow
+    - set a reminder for [parent-teacher meeting](task) on [September 20th](date) at [4 PM](time)
+    - remind me to [take out the trash](task) at [8 PM](time) tonight
+    - set a reminder for [dinner with friends](task) on [Saturday](date) at [7 PM](time)
+    - remind me to [walk the dog](task) at [8 AM](time) every [morning](date)
+    - set a reminder for [annual health checkup](task) on [October 5th](date) at [9 AM](time)
+    - remind me to [buy birthday gift](task) for Sarah on [June 10th](date) at [3 PM](time)
+    - set a reminder for [car servicing](task) on [the first Monday of next month](date) at [10 AM](time)
+    - remind me to [submit the expense report](task) by [the end of this week](date) at [5 PM](time)
+    - set a reminder for [cleaning the garage](task) on [the last day of the month](date) at [11 AM](time)
+    - remind me to [call mom](task) at [8 PM](time) every [Sunday](date)
+    - set a reminder for [payday](task) on [the last Friday of the month](date) at [noon](time)
+    - remind me to [schedule dentist appointment](task) at [9 AM](time) on [Thursday](date)
+    - set a reminder for [voting](task) for [the upcoming election](date)
+    - remind me to [check the mail](task) when I get [home](location)
+    - set a reminder for [meditation](task) at [sunset](time) at the [beach](location)
+    - remind me to [feed the cat](task) before [leaving](location) for [work](location)
+    - set a reminder for [workout](task) before [dinner](time)
+    - remind me to [send emails](task) after [lunch](time)
+    - set a reminder for [breakfast](task) before [leaving](location) for [work](location)
+    - remind me to [meditate](task) after [waking up](time)
+    - set a reminder for [study session](task) after [work](time)
+    - remind me to [water plants](task) before [bedtime](time)
+    - set a reminder for [laundry](task) after [coming back](time) from [grocery shopping](task)
+    - remind me to [reply to emails](task) during [lunch break](time)
+    - set a reminder for [dinner preparation](task) before [kids](location) return from [school](location)
+    - remind me to [practice guitar](task) before [bedtime](time)
+    - set a reminder for [picking up kids](task) after [work](time)
+    - remind me to [start reading](task) after [dinner](time)
+    - set a reminder for [cleaning](task) before [guests](location) arrive
+    - remind me to [workout](task) after [waking up](time)
+    - set a reminder for [grocery shopping](task) before [coming back](time) from [work](location)
+    - remind me to [walk the dog](task) after [dinner](time)
+    - set a reminder for [calling parents](task) before [bedtime](time)
+    - remind me to [write report](task) after [morning meeting](time)
+    - set a reminder for [planning vacation](task) before [next weekend](date)
+    - remind me to [water plants](task) after [coming back](time) from [work](location)
+    - set a reminder for [online meeting](task) before [lunch](time)
+    - remind me to [check mail](task) before [leaving](location) for [work](location)
+    - set a reminder for [writing blog post](task) after [dinner](time)
+    - remind me to [pay bills](task) after [getting salary](time)
+    - set a reminder for [cleaning the house](task) before [weekend](date) at [10 AM](time)
+    - remind me to [review presentation](task) before [meeting](time) at [2 PM](time)
+    - set a reminder for [grocery shopping](task) before [weekend](date) at [9 AM](time)
+    - remind me to [attend webinar](task) after [lunch](time) at [1 PM](time)
+    - set a reminder for [doctor's appointment](task) before [weekend](date) at [3 PM](time)
+    - remind me to [water plants](task) after [workout](time) at [6 PM](time)
+    - set a reminder for [breakfast](task) before [leaving](location) for [work](location) at [7 AM](time)
+    - remind me to [meditate](task) before [bedtime](time) at [10 PM](time)
+    - set a reminder for [grocery shopping](task) after [coming back](time) from [work](location) at [6 PM](time)
+    - remind me to [call John](task) after [meeting](time) at [3 PM](time)
+    - set a reminder for [submitting report](task) before [weekend](date) at [5 PM](time)
 
 - intent: open_app
   examples: |
-    - open the calculator app
-    - launch the calendar application
-    - start the camera app
-    - open the clock app
-    - launch the contacts application
-    - start the email app
-    - open the file manager application
-    - launch the gallery app
-    - start the messaging app
-    - open the music player app
-    - launch the notes application
-    - start the phone app
-    - open the settings app
-    - launch the weather application
-    - start the browser app
-    - open the maps app
-    - launch the voice recorder application
-    - start the alarm app
-    - open the Spotify app
-    - launch the Instagram application
-    - start the Facebook app
-    - open the Twitter app
-    - launch the LinkedIn application
-    - start the YouTube app
-    - open the TikTok app
-    - launch the Snapchat application
-    - start the WhatsApp app
-    - open the Zoom app
-    - launch the Slack application
-    - start the Discord app
-    - open the Skype app
-    - launch the Microsoft Teams application
-    - start the Zoom Cloud Meetings app
-    - open the Google Drive app
-    - launch the Dropbox application
-    - start the Microsoft OneDrive app
-    - open the Google Maps app
-    - launch the Waze application
-    - start the Uber app
-    - open the Lyft app
-    - launch the Airbnb application
-    - start the Booking.com app
-    - open the Netflix app
-    - launch the Amazon Prime Video application
-    - start the Disney+ app
-    - open the Hulu app
-    - launch the HBO Max application
-    - start the Apple TV app
-    - open the YouTube Music app
-    - launch the Spotify application
-    - start the Apple Music app
-    - open the Podcasts app
-    - launch the Audible application
-    - start the Google Podcasts app
-    - open the Chrome app
-    - launch the Safari application
-    - start the Firefox app
-    - open the Microsoft Edge app
-    - launch the Opera Browser application
-    - start the Brave Browser app
-    - open the Facebook Messenger app
-    - launch the WhatsApp Messenger application
-    - start the Telegram app
-    - open the Signal app
-    - launch the Discord application
-    - start the Slack app
-    - open the Skype app
-    - launch the Zoom app
-    - start the Google Meet app
-    - open the Microsoft Teams app
-    - launch the Cisco Webex Meetings application
-    - start the Hangouts app
-    - open the Instagram app
-    - launch the Snapchat application
-    - start the TikTok app
-    - open the Twitter app
-    - launch the LinkedIn application
-    - start the Facebook app
-    - open the Pinterest app
-    - launch the Reddit application
-    - start the Tumblr app
-    - open the LinkedIn app
-    - launch the Zoom app
-    - start the Google Meet app
-    - open the Microsoft Teams app
-    - launch the Cisco Webex Meetings application
-    - start the Hangouts app
-    - open the Instagram app
-    - launch the Snapchat application
-    - start the TikTok app
-    - open the Twitter app
-    - launch the LinkedIn application
-    - start the Facebook app
-    - open the Pinterest app
-    - launch the Reddit application
-    - start the Tumblr app
-    - open the LinkedIn app
-    - launch the Zoom app
-    - start the Google Meet app
-    - open the Microsoft Teams app
-    - launch the Cisco Webex Meetings application
-    - start the Hangouts app
-    - open the Instagram app
-    - launch the Snapchat application
-    - start the TikTok app
-    - open the Twitter app
-    - launch the LinkedIn application
-    - start the Facebook app
-    - open the Pinterest app
-    - launch the Reddit application
-    - start the Tumblr app
-    - open the LinkedIn app
-    - launch the Zoom app
-    - start the Google Meet app
-    - open the Microsoft Teams app
-    - launch the Cisco Webex Meetings application
-    - start the Hangouts app
-    - open the Instagram app
-    - launch the Snapchat application
-    - start the TikTok app
-    - open the Twitter app
-    - launch the LinkedIn application
-    - start the Facebook app
-    - open the Pinterest app
-    - launch the Reddit application
-    - start the Tumblr app
-
-
+    - open the [calculator](app) app
+    - launch the [calendar](app) application
+    - start the [camera](app) app
+    - open the [clock](app) app
+    - launch the [contacts](app) application
+    - start the [email](app) app
+    - open the [file manager](app) application
+    - launch the [gallery](app) app
+    - start the [messaging](app) app
+    - open the [music player](app) app
+    - launch the [notes](app) application
+    - start the [phone](app) app
+    - open the [settings](app) app
+    - launch the [weather](app) application
+    - start the [browser](app) app
+    - open the [maps](app) app
+    - launch the [voice recorder](app) application
+    - start the [alarm](app) app
+    - open the [Spotify](app) app
+    - launch the [Instagram](app) application
+    - start the [Facebook](app) app
+    - open the [Twitter](app) app
+    - launch the [LinkedIn](app) application
+    - start the [YouTube](app) app
+    - open the [TikTok](app) app
+    - launch the [Snapchat](app) application
+    - start the [WhatsApp](app) app
+    - open the [Zoom](app) app
+    - launch the [Slack](app) application
+    - start the [Discord](app) app
+    - open the [Skype](app) app
+    - launch the [Microsoft Teams](app) application
+    - start the [Zoom Cloud Meetings](app) app
+    - open the [Google Drive](app) app
+    - launch the [Dropbox](app) application
+    - start the [Microsoft OneDrive](app) app
+    - open the [Google Maps](app) app
+    - launch the [Waze](app) application
+    - start the [Uber](app) app
+    - open the [Lyft](app) app
+    - launch the [Airbnb](app) application
+    - start the [Booking.com](app) app
+    - open the [Netflix](app) app
+    - launch the [Amazon Prime Video](app) application
+    - open the [Hulu](app) app
+    - launch the [HBO Max](app) application
+    - start the [Apple TV](app) app
+    - open the [YouTube Music](app) app
+    - launch the [Spotify](app) application
+    - start the [Apple Music](app) app
+    - open the [Podcasts](app) app
+    - launch the [Audible](app) application
+    - start the [Google Podcasts](app) app
+    - open the [Chrome](app) app
+    - launch the [Safari](app) application
+    - start the [Firefox](app) app
+    - open the [Microsoft Edge](app) app
+    - launch the [Opera Browser](app) application
+    - start the [Brave Browser](app) app
+    - open the [Facebook Messenger](app) app
+    - launch the [WhatsApp Messenger](app) application
+    - start the [Telegram](app) app
+    - open the [Signal](app) app
+    - launch the [Discord](app) application
+    - start the [Slack](app) app
+    - open the [Skype](app) app
+    - launch the [Zoom](app) app
+    - start the [Google Meet](app) app
+    - open the [Microsoft Teams](app) app
+    - launch the [Cisco Webex Meetings](app) application
+    - start the [Hangouts](app) app
+    - open the [Instagram](app) app
+    - launch the [Snapchat](app) application
+    - start the [TikTok](app) app
+    - open the [Twitter](app) app
+    - launch the [LinkedIn](app) application
+    - start the [Facebook](app) app
+    - open the [Pinterest](app) app
+    - launch the [Reddit](app) application
+    - open the [LinkedIn](app) app
+    - launch the [Zoom](app) app
+    - start the [Google Meet](app) app
+    - open the [Microsoft Teams](app) app
+    - launch the [Cisco Webex Meetings](app) application
+    - start the [Hangouts](app) app
+    - open the [Instagram](app) app
+    - launch the [Snapchat](app) application
+    - start the [TikTok](app) app
+    - open the [Twitter](app) app
+    - launch the [LinkedIn](app) application
+    - start the [Facebook](app) app
+    - open the [Pinterest](app) app
+    - launch the [Reddit](app) application
+    - open the [LinkedIn](app) app
+    - open [hotstar](app) app
+    - launch the [Zoom](app) app
+    - start the [Google Meet](app) app
+    - open the [Microsoft Teams](app) app
+    - launch the [Cisco Webex Meetings](app) application
+    - start the [Hangouts](app) app
+    - open the [Instagram](app) app
+    - launch the [Snapchat](app) application
+    - start the [TikTok](app) app
+    - open the [Twitter](app) app
+    - launch the [LinkedIn](app) application
+    - start the [Facebook](app) app
+    - open the [Pinterest](app) app
+    - launch the [Reddit](app) application
+    - open the [LinkedIn](app) app
+    - launch the [Zoom](app) app
+    - start the [Google Meet](app) app
+    - open the [Microsoft Teams](app) app
+    - launch the [Cisco Webex Meetings](app) application
+    - start the [Hangouts](app) app
+    - open the [Instagram](app) app
+    - launch the [Snapchat](app) application
+    - start the [TikTok](app) app
+    - open the [Twitter](app) app
+    - launch the [LinkedIn](app) application
+    - start the [Facebook](app) app
+    - open the [Pinterest](app) app
+    - launch the [Reddit](app) application
+    - open the [LinkedIn](app) app
+    - launch the [Zoom](app) app
+    - start the [Google Meet](app) app
+    - open the [Microsoft Teams](app) app
+    - launch the [Cisco Webex Meetings](app) application
+    - start the [Hangouts](app) app
+    - open the [Instagram](app) app
+    - launch the [Snapchat](app) application
+    - start the [TikTok](app) app
+    - open the [Twitter](app) app
+    - launch the [LinkedIn](app) application
+    - start the [Facebook](app) app
+    - open the [Pinterest](app) app
+    - launch the [Reddit](app) application
+    - start the [Tumblr](app) app
+  
 - intent: calculate
   examples:  |
     - "What is the square root of 16?"  
@@ -1557,344 +1764,207 @@ nlu:
     - what is 378 minus 7 times 9
     - compute 30 times 13 minus 6
     - find the result of 380 divided by 38 minus 2
-
-
-- intent: file_management
-  examples:  |
-    - I want to create a new file.
-    - Create a file in the C drive.
-    - Can you make a new file for me?
-    - Make a file called "notes.txt" in the D drive.
-    - Create a new text file.
-    - I need to create a document.
-    - Please generate a file.
-    - Make a new file on the desktop.
-    - Create a file with the name "report.docx".
-    - Can you create a file in the downloads folder?
-    - I want to create a file named "budget.xlsx".
-    - Make a new file in the documents folder.
-    - I need a file for my project.
-    - Can you create a text document?
-    - Generate a new file named "data.csv".
-    - Make a file in the C drive named "presentation.pptx".
-    - I need to create a file urgently.
-    - Please create a new file on the desktop.
-    - Make a file named "script.py" in the scripts folder.
-    - I want to create a new file on my computer.
-    - Create a file called "notes.txt" on the desktop.
-    - Can you make a file for me to store data?
-    - Make a new file in the music folder.
-    - I need to create a spreadsheet file.
-    - Please generate a new file on my computer.
-    - Create a file named "analysis.docx" in the reports folder.
-    - Make a new file for storing information.
-    - I want to create a file named "presentation.ppt".
-    - Generate a file named "summary.txt" in the C drive.
-    - Make a new file in the pictures folder.
-    - Create a document to save notes.
-    - Can you create a file in the C drive?
-    - Make a file named "log.txt" in the logs folder.
-    - I need a new file for recording data.
-    - Please generate a new file in the downloads folder.
-    - Create a file named "code.py" in the programming folder.
-    - Make a new file in the videos folder.
-    - I want to create a file named "schedule.xlsx".
-    - Generate a file in the C drive.
-    - Create a document for writing.
-    - Make a new file named "instructions.txt" in the manuals folder.
-    - I need to create a file to store records.
-    - Please generate a file on the desktop.
-    - Create a file named "plan.docx" in the plans folder.
-    - Make a new file for documentation.
-    - I want to create a file called "contacts.csv".
-    - Generate a new file in the documents folder.
-    - Create a file for saving important information.
-    - Make a file named "presentation.ppt" in the presentations folder.
-    - I need to create a file quickly.
-    - Please generate a file in the music folder.
-    - Create a file to store research data.
-    - Make a new file named "report.docx" in the reports folder.
-    - I want to create a text file.
-    - Generate a file in the pictures folder.
-    - Create a document for analysis.
-    - Make a new file for the project.
-    - I need to create a file for my assignment.
-    - Please generate a new file in the videos folder.
-    - Create a file named "notes.txt" for taking notes.
-    - Make a new file in the downloads folder.
-    - I want to create a spreadsheet.
-    - Generate a file named "budget.xlsx" in the C drive.
-    - Create a document named "plan.docx" for planning.
-    - Make a new file for the task.
-    - I need to create a file for documentation.
-    - Please generate a new file in the programming folder.
-    - Create a file named "log.txt" for logging.
-    - Make a new file in the documents folder.
-    - I want to create a file named "summary.txt".
-    - Generate a file in the reports folder.
-    - Create a document for recording information.
-    - Make a new file named "instructions.txt" in the manuals folder.
-    - I need to create a file for analysis.
-    - Please generate a file in the plans folder.
-    - Create a file for storing contacts.
-    - Make a new file named "schedule.xlsx" in the presentations folder.
-    - I want to create a file quickly.
-    - Generate a new file in the music folder.
-    - Create a file to save research data.
-    - Make a file named "report.docx" in the reports folder.
-    - I need to create a text file.
-    - Please generate a file in the pictures folder.
-    - Create a document for writing notes.
-    - Make a new file for the project.
-    - I want to create a file for my assignment.
-    - Generate a new file in the videos folder.
-    - Create a file named "notes.txt" for taking notes.
-    - Make a new file in the downloads folder.
-    - I need to create a spreadsheet.
-    - Please generate a file in the C drive.
-    - Create a document named "plan.docx" for planning.
-    - Make a new file for the task.
-    - I need to create a file for documentation.
-    - Please generate a new file in the programming folder.
-    - Create a file named "log.txt" for logging.
-    - Make a new file in the documents folder.
-    - I want to create a file named "summary.txt".
-    - Generate a file in the reports folder.
-    - Create a document for recording information.
-    - Make a new file named "instructions.txt" in the manuals folder.
-    - I need to create a file for analysis.
-    - Please generate a file in the plans folder.
-    - Create a file for storing contacts.
-    - Make a new file named "schedule.xlsx" in the presentations folder.
-
-
-- intent: min_max
+ 
+- intent: minimize_window
   examples: |
     - Minimize the window.
-    - Maximize the window.
     - Can you minimize this?
-    - Make it small.
     - I want to minimize this.
-    - Please maximize the window.
-    - Can you make it big?
-    - Minimize it.
-    - Maximize the current window.
+    - Please make it small.
     - I need to minimize it.
-    - Make the window smaller.
-    - Can you maximize this?
-    - I want to make it full screen.
+    - Minimize it.
+    - Minimize the current window.
     - Minimize this window, please.
-    - Please maximize this.
-    - I need to minimize the window.
-    - Make it full screen.
-    - Can you minimize that?
-    - Maximize this for me.
-    - I want to minimize the current window.
-    - Please make it small.
-    - Minimize the active window.
-    - Can you maximize the screen?
-    - I need to make it bigger.
-    - Make this window fullscreen.
     - Please minimize.
-    - Maximize the active window.
-    - I want to minimize this one.
-    - Can you make it larger?
-    - Minimize this for me.
-    - Please maximize.
-    - I need to make it smaller.
-    - Minimize it, please.
-    - Can you maximize the current window?
-    - Make it big.
     - I want to minimize the window.
-    - Please maximize the screen.
-    - I need to make it fullscreen.
     - Minimize the window now.
-    - Can you make it fullscreen?
-    - I want to maximize this.
-    - Please minimize the current window.
-    - Maximize this window, please.
-    - Can you make it full screen?
-    - Minimize the active window now.
-    - Please maximize this one.
-    - I need to minimize it now.
-    - Make the window larger.
-    - Maximize this for me, please.
+    - I need to make it smaller.
+    - Make it small.
+    - Minimize this for me.
     - I want to minimize this one.
-    - Can you make it small?
-    - Minimize the window immediately.
-    - Please maximize the active window.
-    - I need to make it big.
-    - Make this fullscreen.
-    - Minimize this window.
-    - Can you maximize?
-    - I want to maximize the window.
-    - Please minimize the screen.
-    - I need to make it fullscreen.
-    - Minimize it now.
-    - Can you maximize the current screen?
-    - I want to make it smaller.
-    - Please minimize this one.
-    - I need to maximize this.
-    - Maximize the window immediately.
-    - Can you make it big?
-    - I want to minimize this.
-    - Please maximize this window.
+    - Please minimize the current window.
     - Minimize this one, please.
-    - Can you make it fullscreen?
-    - I need to maximize the active window.
-    - Minimize the current window, please.
+    - I need to make it small.
+    - Minimize this window immediately.
     - Please make it small.
-    - I want to maximize the screen.
     - Can you minimize the current window?
-    - I need to make it fullscreen.
-    - Maximize the window right away.
-    - Can you make it larger?
-    - Minimize this for me, please.
-    - I want to maximize this one.
-    - Please minimize the current screen.
-    - I need to make it big.
-    - Make it fullscreen.
+    - I need to minimize the screen.
+    - Minimize the current window, please.
+    - Minimize this one immediately.
     - Can you minimize the window?
-    - I want to maximize this window.
     - Please minimize this for me.
     - I need to minimize the screen.
-    - Maximize this window now.
-    - Can you make it small?
-    - I want to minimize this one.
+    - Minimize this window,please.
+
+- intent: maximize_window
+  examples: |
+    - Maximize the window.
+    - Please maximize this.
+    - Can you make it big?
+    - Please maximize.
+    - Can you maximize this?
+    - I want to make it full screen.
+    - Please maximize this window.
+    - Maximize this window, please.
+    - Please maximize the screen.
+    - Maximize the window immediately.
+    - Can you make it fullscreen?
+    - Please maximize the active window.
+    - Maximize the current window, please.
+    - Maximize this one, please.
+    - Maximize this for me, please.
     - Please maximize the current window.
-    - Minimize this one immediately.
+    - Maximize this one immediately.
     - Can you make it big?
     - I need to maximize it.
     - Make the window fullscreen.
-    - Minimize this window, please.
+    - Maximize this window now.
     - Can you maximize the screen?
     - I want to maximize the window.
-    - Please minimize the current screen.
+    - Please maximize the current screen.
     - I need to make it fullscreen.
-    - Minimize it now.
+    - Maximize it now.
     - Can you maximize the current window?
 
-
-- intent: notes
+- intent: play_music
   examples: |
-    - Open notepad.
-    - Can you open notepad?
-    - Start notepad.
-    - Launch notepad.
-    - Take a note.
-    - Can you take a note for me?
-    - Start taking notes.
-    - Begin note-taking.
-    - Read note.
-    - Read my note.
-    - Can you read a note for me?
-    - Please read my note.
-    - Retrieve note.
-    - Fetch note.
-    - Show me my note.
-    - Display my note.
-    - Open my note.
-    - Get note.
-    - Access note.
-    - Bring up my note.
-    - Load my note.
-    - Find my note.
-    - Show note content.
-    - Show what's in the note.
-    - Display note text.
-    - Open the note I saved.
-    - Open the note I created.
-    - Take me to my note.
-    - Read the note I saved.
-    - Read the note I created.
-    - Delete note.
-    - Remove note.
-    - Erase note.
-    - Can you delete my note?
-    - Remove the note I saved.
-    - Remove the note I created.
-    - Delete the note I saved.
-    - Delete the note I created.
-    - Delete the note named [Note Name].
-    - Remove the note named [Note Name].
-    - Erase the note named [Note Name].
-    - Can you delete the note named [Note Name]?
-    - Remove the note labeled [Note Name].
-    - Erase the note labeled [Note Name].
-    - Delete all notes.
-    - Remove all notes.
-    - Erase all notes.
-    - Can you delete all my notes?
-    - Remove all the notes I saved.
-    - Erase all the notes I created.
-    - Delete all the notes I saved.
-    - Delete all the notes I created.
-    - Read all notes.
-    - Read my notes.
-    - Can you read all my notes?
-    - Please read all my notes.
-    - Retrieve all notes.
-    - Fetch all notes.
-    - Show me all my notes.
-    - Display all my notes.
-    - Open all my notes.
-    - Get all notes.
-    - Access all notes.
-    - Bring up all my notes.
-    - Load all my notes.
-    - Find all my notes.
-    - Show all note content.
-    - Show what's in all notes.
-    - Display all note texts.
-    - Open the notes I saved.
-    - Open the notes I created.
-    - Take me to my notes.
-    - Read the notes I saved.
-    - Read the notes I created.
-    - Delete all notes except one.
-    - Remove all notes except one.
-    - Erase all notes except one.
-    - Delete all notes except [Note Name].
-    - Remove all notes except [Note Name].
-    - Erase all notes except [Note Name].
-    - Can you delete all my notes except [Note Name]?
-    - Remove all the notes I saved except one.
-    - Erase all the notes I created except one.
-    - Delete all the notes I saved except one.
-    - Delete all the notes I created except one.
-    - Read note aloud.
-    - Read my note aloud.
-    - Can you read a note aloud for me?
-    - Please read my note aloud.
-    - Retrieve note details.
-    - Fetch note details.
-    - Show me my note details.
-    - Display my note details.
-    - Open my note details.
-    - Get note details.
-    - Access note details.
-    - Bring up my note details.
-    - Load my note details.
-    - Find my note details.
-    - Show note details content.
-    - Show what's in the note details.
-    - Display note details text.
-    - Open the note details I saved.
-    - Open the note details I created.
-    - Take me to my note details.
-    - Read the note details I saved.
-    - Read the note details I created.
-    - Delete note details.
-    - Remove note details.
-    - Erase note details.
-    - Can you delete my note details?
-    - Remove the note details I saved.
-    - Remove the note details I created.
-    - Delete the note details I saved.
-    - Delete the note details I created.
+    - Play some music
+    - Can you play a song for me?
+    - I want to listen to some music
+    - Start playing music
+    - Play my favorite song
+    - Can you put on some music?
+    - I'm in the mood for music
+    - Let's listen to some tunes
+    - Play a track
+    - Start a music playlist
+    - Play some [rock](song) music
+    - Can you play a [pop](song) song for me?
+    - I want to listen to some [jazz](song)
+    - Start playing [classical](song) music
+    - Play my favorite [hip hop](song) song
+    - Can you put on some [electronic](song) music?
+    - I'm in the mood for [indie](song) tunes
+    - Let's listen to some [reggae](song)
+    - Play a [country](song) track
+    - Start a [metal](song) music playlist
+    - Play [Bohemian Rhapsody](song) by Queen
+    - Can you play [Shape of You](song) by Ed Sheeran?
+    - I want to listen to [Tum Hi Ho](song) from Aashiqui 2
+    - Start playing [Despacito](song) by Luis Fonsi
+    - Play my favorite [Believer](song) by Imagine Dragons
+    - Can you put on [Senorita](song) by Shawn Mendes?
+    - I'm in the mood for [Roar](song) by Katy Perry
+    - Let's listen to [Perfect](song) by Ed Sheeran
+    - Play [Chaiyya Chaiyya](song) from Dil Se
+    - Start a [Shape of You](song) playlist
+    - Play [Bohemian Rhapsody](song) by Queen
+    - Can you play [Shape of You](song) by Ed Sheeran?
+    - I want to listen to [Tum Hi Ho](song) from Aashiqui 2
+    - Start playing [Despacito](song) by Luis Fonsi
+    - Play my favorite [Believer](song) by Imagine Dragons
+    - Can you put on [Senorita](song) by Shawn Mendes?
+    - I'm in the mood for [Roar](song) by Katy Perry
+    - Let's listen to [Perfect](song) by Ed Sheeran
+    - Play [Chaiyya Chaiyya](song) from Dil Se
+    - Start a [Shape of You](song) playlist
+    - Play [Bohemian Rhapsody](song) by Queen
+    - Can you play [Shape of You](song) by Ed Sheeran?
+    - I want to listen to [Tum Hi Ho](song) from Aashiqui 2
+    - Start playing [Despacito](song) by Luis Fonsi
+    - Play my favorite [Believer](song) by Imagine Dragons
+    - Can you put on [Senorita](song) by Shawn Mendes?
+    - I'm in the mood for [Roar](song) by Katy Perry
+    - Let's listen to [Perfect](song) by Ed Sheeran
+    - Play [Chaiyya Chaiyya](song) from Dil Se
+    - Start a [Shape of You](song) playlist
+    - Play [Bohemian Rhapsody](song) by Queen
+    - Can you play [Shape of You](song) by Ed Sheeran?
+    - I want to listen to [Tum Hi Ho](song) from Aashiqui 2
+    - Start playing [Despacito](song) by Luis Fonsi
+    - Play my favorite [Believer](song) by Imagine Dragons
+    - Can you put on [Senorita](song) by Shawn Mendes?
+    - I'm in the mood for [Roar](song) by Katy Perry
+    - Let's listen to [Perfect](song) by Ed Sheeran
+    - Play [Chaiyya Chaiyya](song) from Dil Se
+    - Start a [Shape of You](song) playlist
+    - Play [Bohemian Rhapsody](song) by Queen
+    - Can you play [Shape of You](song) by Ed Sheeran?
+    - I want to listen to [Tum Hi Ho](song) from Aashiqui 2
+    - Start playing [Despacito](song) by Luis Fonsi
+    - Play my favorite [Believer](song) by Imagine Dragons
+    - Can you put on [Senorita](song) by Shawn Mendes?
+    - I'm in the mood for [Roar](song) by Katy Perry
+    - Let's listen to [Perfect](song) by Ed Sheeran
+    - Play [Chaiyya Chaiyya](song) from Dil Se
+    - Start a [Shape of You](song) playlist
+    - Play [Bohemian Rhapsody](song) by Queen
+    - Can you play [Shape of You](song) by Ed Sheeran?
+    - I want to listen to [Tum Hi Ho](song) from Aashiqui 2
+    - Start playing [Despacito](song) by Luis Fonsi
+    - Play my favorite [Believer](song) by Imagine Dragons
+    - Can you put on [Senorita](song) by Shawn Mendes?
+    - I'm in the mood for [Roar](song) by Katy Perry
+    - Let's listen to [Perfect](song) by Ed Sheeran
+    - Play [Chaiyya Chaiyya](song) from Dil Se
+    - Start a [Shape of You](song) playlist
+    - Play [Bohemian Rhapsody](song) by Queen
+    - Can you play [Shape of You](song) by Ed Sheeran?
+    - I want to listen to [Tum Hi Ho](song) from Aashiqui 2
+    - Start playing [Despacito](song) by Luis Fonsi
+    - Play my favorite [Believer](song) by Imagine Dragons
+    - Can you put on [Senorita](song) by Shawn Mendes?
+    - I'm in the mood for [Roar](song) by Katy Perry
+    - Let's listen to [Perfect](song) by Ed Sheeran
+    - Play [Chaiyya Chaiyya](song) from Dil Se
+    - Start a [Shape of You](song) playlist
+    - Play [Bohemian Rhapsody](song) by Queen
+    - Can you play [Shape of You](song) by Ed Sheeran?
+    - I want to listen to [Tum Hi Ho](song) from Aashiqui 2
+    - Start playing [Despacito](song) by Luis Fonsi
+    - Play my favorite [Believer](song) by Imagine Dragons
+    - Can you put on [Senorita](song) by Shawn Mendes?
+    - I'm in the mood for [Roar](song) by Katy Perry
+    - Let's listen to [Perfect](song) by Ed Sheeran
+    - Play [Chaiyya Chaiyya](song) from Dil Se
+    - Start a [Shape of You](song) playlist
+    - Play [Bohemian Rhapsody](song) by Queen
+    - Can you play [Shape of You](song) by Ed Sheeran?
+    - I want to listen to [Tum Hi Ho](song) from Aashiqui 2
+    - Start playing [Despacito](song) by Luis Fonsi
+    - Play my favorite [Believer](song) by Imagine Dragons
+    - Can you put on [Senorita](song) by Shawn Mendes?
+    - I'm in the mood for [Roar](song) by Katy Perry
+    - Let's listen to [Perfect](song) by Ed Sheeran
+    - Play [Chaiyya Chaiyya](song) from Dil Se
+    - Start a [Shape of You](song) playlist
 
-
-
+- intent: media_action
+  examples: |
+    - play [resume](action)
+    - [resume](action)
+    - [start](action) playing
+    - Continue [resume](action)
+    - pause [stop](action)
+    - halt [stop](action)
+    - Increase [volume_up](action) a bit
+    - Lower [volume_down](action) a little
+    - Raise [volume_up](action) slightly
+    - Decrease [volume_down](action) slightly
+    - [volume_up](action)
+    - [volume_down](action)
+    - Play the [next](action)
+    - Skip to the [next](action)
+    - Play [next](action)
+    - Skip to the [next](action)
+    - Move to the [next](action)
+    - Play the [previous](action)
+    - Go back to the [previous](action)
+    - Play [previous](action)
+    - Go back to the [previous](action)
+    - Previous [previous](action)
+    - Go to the [previous](action)
+  
 - intent: email
   examples: |
     - Send an email with this note as the body.
@@ -2010,8 +2080,7 @@ nlu:
     - Send a message fast.
     - I want to send a message quickly.
 
-
-- intent: shutdown_restart
+- intent: shutdown_computer
   examples: |
     - Shutdown my computer.
     - I want to shut down my PC.
@@ -2019,6 +2088,54 @@ nlu:
     - Shut down the system.
     - Perform a shutdown.
     - Turn off my PC.
+    - Shutdown now.
+    - I need to shut down.
+    - Turn off now.
+    - Shutdown quickly.
+    - Power off the computer.
+    - Can you shut down the PC?
+    - Please turn off my computer.
+    - Shut down immediately.
+    - I want to power off my PC.
+    - Shut the computer down.
+    - Shutdown this machine.
+    - Turn off the PC now.
+    - Shutdown as soon as possible.
+    - Can you power off my computer?
+    - Shut down the PC.
+    - Please perform a shutdown.
+    - Turn the computer off.
+    - I need to turn off my PC.
+    - Shutdown the computer, please.
+    - Power down the system.
+    - Shutting down now.
+    - Please shut down.
+    - Turn off the computer immediately.
+    - Shut down the computer now.
+    - Shutdown the PC immediately.
+    - Power off now.
+    - Can you turn off the system?
+    - I want to perform a shutdown.
+    - Turn off immediately.
+    - Please perform a shutdown now.
+    - Turn off this computer.
+    - Shutdown the machine.
+    - Power off the PC.
+    - Shut down immediately.
+    - Please shut down the PC.
+    - Turn off the machine.
+    - Shutdown quickly.
+    - Power off the machine.
+    - Turn off the computer.
+    - I need to turn off the machine.
+    - Shutdown as soon as possible.
+    - Please power off the computer.
+    - Can you turn off the machine?
+    - Turn off this system.
+    - I want to power down my computer.
+
+- intent: restart_computer
+  examples: |
     - I need to restart my computer.
     - Restart the system.
     - Can you reboot my PC?
@@ -2026,103 +2143,290 @@ nlu:
     - Perform a restart.
     - Reboot the system.
     - Restart my PC, please.
-    - Shutdown now.
     - Restart now.
-    - I need to shut down.
     - Restart immediately.
-    - Turn off now.
     - Restart as soon as possible.
-    - Shutdown quickly.
-
+    - Restart quickly.
+    - Restart the computer.
+    - I need to reboot my PC.
+    - Can you restart the system?
+    - Please perform a restart.
+    - Reboot my computer, please.
+    - I want to perform a reboot.
+    - Restart this machine.
+    - Perform a reboot now.
+    - Restart the PC immediately.
+    - Please restart.
+    - Reboot the PC.
+    - Restart the computer now.
+    - I need to restart.
+    - Restart the PC immediately.
+    - Reboot the machine.
+    - Please reboot the computer.
+    - Restart the machine.
+    - Perform a system restart.
+    - I want to reboot my PC.
+    - Restart this system.
+    - I need to perform a restart.
+    - Reboot the computer immediately.
+    - Can you restart the PC?
+    - Restart the PC now.
+    - Please reboot.
+    - I want to restart the PC.
+    - Restart the machine now.
+    - Reboot the computer immediately.
+    - Restart the PC immediately.
+    - Please perform a system restart.
+    - Reboot the PC immediately.
+    - Can you restart my computer?
+    - Restart the system immediately.
+    - I need to reboot.
+    - Restart the machine immediately.
+    - Can you reboot the computer?
+    - Restart the computer immediately.
 
 - intent: get_weather
   examples: |
-    - What is the weather like in London?
-    - Tell me the weather in Paris.
-    - What's the temperature in New York?
-    - Can you give me the weather forecast for Tokyo?
-    - How's the weather in Sydney today?
-    - What's the current weather in Beijing?
-    - Tell me about the weather in Los Angeles.
-    - What's the forecast for Mumbai?
-    - How's the weather looking in Chicago?
-    - Give me the weather details for Berlin.
-    - What's the weather like in Rome?
-    - Tell me the temperature in Dubai.
-    - What's the weather forecast for Moscow?
-    - Give me the weather update for Seoul.
-    - How's the weather in Shanghai?
-    - What's the weather like in Madrid?
-    - Tell me the temperature in Singapore.
-    - Can you give me the weather report for Amsterdam?
-    - What's the weather forecast for Toronto?
-    - How's the weather looking in Barcelona?
-    - Give me the weather details for Hong Kong.
-    - What's the weather like in Istanbul?
-    - Tell me the temperature in Bangkok.
-    - What's the weather forecast for Taipei?
-    - Give me the weather update for Cairo.
-    - How's the weather in Kuala Lumpur?
-    - What's the weather like in Vienna?
-    - Tell me the temperature in Rome.
-    - What's the weather forecast for Tokyo?
-    - Give me the weather update for Seoul.
-    - How's the weather in Shanghai?
-    - What's the weather like in Madrid?
-    - Tell me the temperature in Dubai.
-    - What's the weather forecast for Moscow?
-    - Give me the weather details for Hong Kong.
-    - How's the weather in Kuala Lumpur?
-    - What's the weather like in Vienna?
-    - Tell me the temperature in London.
-    - What's the weather forecast for Paris?
-    - Give me the weather update for New York.
-    - How's the weather in Sydney?
-    - What's the weather like in Beijing?
-    - Tell me the temperature in Los Angeles.
-    - What's the weather forecast for Mumbai?
-    - Give me the weather details for Chicago.
-    - How's the weather in Berlin?
-    - What's the weather like in Tokyo?
-    - Tell me the temperature in Seoul.
-    - What's the weather forecast for Shanghai?
-    - Give me the weather update for Madrid.
-    - How's the weather in Dubai?
-    - What's the weather like in Hong Kong?
-    - Tell me the temperature in Kuala Lumpur.
-    - What's the weather forecast for Vienna?
-    - Give me the weather details for London.
-    - How's the weather in Paris?
-    - What's the weather like in New York?
-    - Tell me the temperature in Sydney.
-    - What's the weather forecast for Beijing?
-    - Give me the weather update for Los Angeles.
-    - How's the weather in Mumbai?
-    - What's the weather like in Chicago?
-    - Tell me the temperature in Berlin.
-    - What's the weather forecast for Tokyo?
-    - Give me the weather details for Seoul.
-    - How's the weather in Shanghai?
-    - What's the weather like in Madrid?
-    - Tell me the temperature in Dubai.
-    - What's the weather forecast for Moscow?
-    - Give me the weather update for Hong Kong.
-    - How's the weather in Kuala Lumpur?
-    - What's the weather like in Vienna?
-    - Tell me the temperature in London.
-    - What's the weather forecast for Paris?
-    - Give me the weather details for New York.
-    - How's the weather in Sydney?
-    - What's the weather like in Beijing?
-    - Tell me the temperature in Los Angeles.
-    - What's the weather forecast for Mumbai?
-    - Give me the weather update for Chicago.
-    - How's the weather in Berlin?
-    - What's the weather like in Tokyo?
-    - Tell me the temperature in Seoul.
-    - What's the weather forecast for Shanghai?
-    - Give me the weather details for Madrid.
-    - How's the weather in Dubai?
-    - What's the weather like in Hong Kong?
-    - Tell me the temperature in Kuala Lumpur.
-    - What's the weather forecast for Vienna?
+    - What is the weather like in [London](city)?
+    - Tell me the weather in [Paris](city).
+    - What's the temperature in [New York](city)?
+    - Can you give me the weather forecast for [Tokyo](city)?
+    - How's the weather in [Sydney](city) today?
+    - What's the current weather in [Beijing](city)?
+    - Tell me about the weather in [Los Angeles](city).
+    - What's the forecast for [Mumbai](city)?
+    - How's the weather looking in [Chicago](city)?
+    - Give me the weather details for [Berlin](city).
+    - What's the weather like in [Rome](city)?
+    - Tell me the temperature in [Dubai](city).
+    - What's the weather forecast for [Moscow](city)?
+    - Give me the weather update for [Seoul](city).
+    - How's the weather in [Shanghai](city)?
+    - What's the weather like in [Madrid](city)?
+    - Tell me the temperature in [Singapore](city).
+    - Can you give me the weather report for [Amsterdam](city)?
+    - What's the weather forecast for [Toronto](city)?
+    - How's the weather looking in [Barcelona](city)?
+    - Give me the weather details for [Hong Kong](city).
+    - What's the weather like in [Istanbul](city)?
+    - Tell me the temperature in [Bangkok](city).
+    - What's the weather forecast for [Taipei](city)?
+    - Give me the weather update for [Cairo](city).
+    - How's the weather in [Kuala Lumpur](city)?
+    - What's the weather like in [Vienna](city)?
+    - Tell me the temperature in [Rome](city).
+    - What's the weather forecast for [Tokyo](city)?
+    - Give me the weather update for [Seoul](city).
+    - How's the weather in [Shanghai](city)?
+    - What's the weather like in [Madrid](city)?
+    - Tell me the temperature in [Dubai](city).
+    - What's the weather forecast for [Moscow](city)?
+    - Give me the weather details for [Hong Kong](city).
+    - How's the weather in [Kuala Lumpur](city)?
+    - What's the weather like in [Vienna](city)?
+    - Tell me the temperature in [London](city).
+    - What's the weather forecast for [Paris](city)?
+    - Give me the weather update for [New York](city).
+    - How's the weather in [Sydney](city)?
+    - What's the weather like in [Beijing](city)?
+    - Tell me the temperature in [Los Angeles](city).
+    - What's the weather forecast for [Mumbai](city)?
+    - Give me the weather details for [Chicago](city).
+    - How's the weather in [Berlin](city)?
+    - What's the weather like in [Tokyo](city)?
+    - Tell me the temperature in [Seoul](city).
+    - What's the weather forecast for [Shanghai](city)?
+    - Give me the weather update for [Madrid](city).
+    - How's the weather in [Dubai](city)?
+    - What's the weather like in [Hong Kong](city)?
+    - Tell me the temperature in [Kuala Lumpur](city).
+    - What's the weather forecast for [Vienna](city)?
+    - Give me the weather details for [London](city).
+    - How's the weather in [Paris](city)?
+    - What's the weather like in [New York](city)?
+    - Tell me the temperature in [Sydney](city).
+    - What's the weather forecast for [Beijing](city)?
+    - Give me the weather update for [Los Angeles](city).
+    - How's the weather in [Mumbai](city)?
+    - What's the weather like in [Chicago](city)?
+    - Tell me the temperature in [Berlin](city).
+    - What's the weather forecast for [Tokyo](city)?
+    - Give me the weather details for [Seoul](city).
+    - How's the weather in [Shanghai](city)?
+    - What's the weather like in [Madrid](city)?
+    - Tell me the temperature in [Dubai](city).
+    - What's the weather forecast for [Moscow](city)?
+    - Give me the weather update for [Hong Kong](city).
+    - How's the weather in [Kuala Lumpur](city)?
+    - What's the weather like in [Vienna](city)?
+    - Tell me the temperature in [London](city).
+    - What's the weather forecast for [Paris](city)?
+    - Give me the weather details for [New York](city).
+    - How's the weather in [Sydney](city)?
+    - What's the weather like in [Beijing](city)?
+    - Tell me the temperature in [Los Angeles](city).
+    - What's the weather forecast for [Mumbai](city)?
+    - Give me the weather update for [Chicago](city).
+    - How's the weather in [Berlin](city)?
+    - What's the weather like in [Tokyo](city)?
+    - Tell me the temperature in [Seoul](city).
+    - What's the weather forecast for [Shanghai](city)?
+    - Give me the weather details for [Madrid](city).
+    - How's the weather in [Dubai](city)?
+    - What's the weather like in [Hong Kong](city)?
+    - Tell me the temperature in [Kuala Lumpur](city).
+    - What's the weather forecast for [Vienna](city)?
+    - Give me the weather details for [Mumbai](city).
+    - How's the weather in [Pune](city)?
+    - What's the weather like in [Nagpur](city)?
+    - Tell me the temperature in [Nashik](city).
+    - What's the weather forecast for [Aurangabad](city)?
+    - Give me the weather update for [Solapur](city).
+    - How's the weather in [Thane](city)?
+    - What's the weather like in [Amravati](city)?
+    - Tell me the temperature in [Kolhapur](city).
+    - What's the weather forecast for [Akola](city)?
+    - Give me the weather details for [Latur](city).
+    - How's the weather in [Sangli](city)?
+    - What's the weather like in [Jalgaon](city)?
+    - Tell me the temperature in [Dhule](city).
+    - What's the weather forecast for [Nanded](city)?
+    - Give me the weather update for [Malegaon](city).
+    - How's the weather in [Ahmednagar](city)?
+    - What's the weather like in [Parbhani](city)?
+    - Tell me the temperature in [Jalna](city).
+    - What's the weather forecast for [Bhusawal](city)?
+    - Give me the weather details for [Panvel](city).
+    - How's the weather in [Beed](city)?
+    - What's the weather like in [Osmanabad](city)?
+    - Tell me the temperature in [Satara](city).
+    - What's the weather forecast for [Yavatmal](city)?
+    - Give me the weather update for [Raigad](city).
+    - How's the weather in [Sindhudurg](city)?
+    - What's the weather like in [Chandrapur](city)?
+    - Tell me the temperature in [Ratnagiri](city).
+    - What's the weather forecast for [Gondia](city)?
+    - Give me the weather details for [Wardha](city).
+    - How's the weather in [Hingoli](city)?
+    - What's the weather like in [Bhandara](city)?
+    - Tell me the temperature in [Washim](city).
+    - What's the weather forecast for [Gadchiroli](city)?
+    - Give me the weather update for [Chandrapur](city).
+    - How's the weather in [Nandurbar](city)?
+    - What's the weather like in [Udgir](city)?
+    - Tell me the temperature in [Ambejogai](city).
+    - What's the weather forecast for [Alibag](city)?
+    - Give me the weather details for [Kalyan](city).
+    - How's the weather in [Pen](city)?
+    - What's the weather like in [Roha](city)?
+    - Tell me the temperature in [Karjat](city).
+    - What's the weather forecast for [Palghar](city)?
+    - Give me the weather update for [Baramati](city).
+    - How's the weather in [Miraj](city)?
+    - What's the weather like in [Ratnagiri](city)?
+    - Tell me the temperature in [Gondia](city).
+    - What's the weather forecast for [Wardha](city)?
+    - Give me the weather details for [Hingoli](city).
+    - How's the weather in [Bhandara](city)?
+    - What's the weather like in [Washim](city)?
+    - Tell me the temperature in [Gadchiroli](city).
+    - What's the weather forecast for [Nandurbar](city)?
+    - Give me the weather update for [Udgir](city).
+    - How's the weather in [Ambejogai](city)?
+    - What's the weather like in [Alibag](city)?
+    - Tell me the temperature in [Kalyan](city).
+    - What's the weather forecast for [Pen](city)?
+    - Give me the weather details for [Roha](city).
+    - How's the weather in [Karjat](city)?
+    - What's the weather like in [Palghar](city)?
+    - Tell me the temperature in [Baramati](city).
+    - What's the weather forecast for [Miraj](city)?
+    - What is the weather like in [London](city)?
+    - Tell me the weather in [Paris](city).
+    - What's the temperature in [New York](city)?
+    - Can you give me the weather forecast for [Tokyo](city)?
+    - How's the weather in [Sydney](city) today?
+    - What's the current weather in [Beijing](city)?
+    - Tell me about the weather in [Los Angeles](city).
+    - What's the forecast for [Mumbai](city)?
+    - How's the weather looking in [Chicago](city)?
+    - Give me the weather details for [Berlin](city).
+    - What's the weather like in [Rome](city)?
+    - Tell me the temperature in [Dubai](city).
+    - What's the weather forecast for [Moscow](city)?
+    - Give me the weather update for [Seoul](city).
+    - How's the weather in [Shanghai](city)?
+    - What's the weather like in [Madrid](city)?
+    - Tell me the temperature in [Singapore](city).
+    - Can you give me the weather report for [Amsterdam](city)?
+    - What's the weather forecast for [Toronto](city)?
+    - How's the weather looking in [Barcelona](city)?
+    - Give me the weather details for [Hong Kong](city).
+    - What's the weather like in [Istanbul](city)?
+    - Tell me the temperature in [Bangkok](city).
+    - What's the weather forecast for [Taipei](city)?
+    - Give me the weather update for [Cairo](city).
+    - How's the weather in [Kuala Lumpur](city)?
+    - What's the weather like in [Vienna](city)?
+    - Tell me the temperature in [Rome](city).
+    - What's the weather forecast for [Tokyo](city)?
+    - Give me the weather update for [Seoul](city).
+    - How's the weather in [Shanghai](city)?
+    - What's the weather like in [Madrid](city)?
+    - Tell me the temperature in [Dubai](city).
+    - What's the weather forecast for [Moscow](city)?
+    - Give me the weather details for [Hong Kong](city).
+    - How's the weather in [Kuala Lumpur](city)?
+    - What's the weather like in [Vienna](city)?
+    - Tell me the temperature in [London](city).
+    - What's the weather forecast for [Paris](city)?
+    - Give me the weather update for [New York](city).
+    - How's the weather in [Sydney](city)?
+    - What's the weather like in [Beijing](city)?
+    - Tell me the temperature in [Los Angeles](city).
+    - What's the weather forecast for [Mumbai](city)?
+    - Give me the weather details for [Chicago](city).
+    - How's the weather in [Berlin](city)?
+    - What's the weather like in [Tokyo](city)?
+    - Tell me the temperature in [Seoul](city).
+    - What's the weather forecast for [Shanghai](city)?
+    - Give me the weather update for [Madrid](city).
+    - How's the weather in [Dubai](city)?
+    - What's the weather like in [Hong Kong](city)?
+    - Tell me the temperature in [Kuala Lumpur](city).
+    - What's the weather forecast for [Vienna](city)?
+    - Give me the weather details for [London](city).
+    - How's the weather in [Paris](city)?
+    - What's the weather like in [New York](city)?
+    - Tell me the temperature in [Sydney](city).
+    - What's the weather forecast for [Beijing](city)?
+    - Give me the weather update for [Los Angeles](city).
+    - How's the weather in [Mumbai](city)?
+    - What's the weather like in [Chicago](city)?
+    - Tell me the temperature in [Berlin](city).
+    - What's the weather forecast for [Tokyo](city)?
+    - Give me the weather details for [Seoul](city).
+    - How's the weather in [Shanghai](city)?
+    - What's the weather like in [Madrid](city)?
+    - Tell me the temperature in [Dubai](city).
+    - What's the weather forecast for [Moscow](city)?
+    - Give me the weather update for [Hong Kong](city).
+    - How's the weather in [Kuala Lumpur](city)?
+    - What's the weather like in [Vienna](city)?
+    - Tell me the temperature in [London](city).
+    - What's the weather forecast for [Paris](city)?
+    - Give me the weather details for [New York](city).
+    - How's the weather in [Sydney](city)?
+    - What's the weather like in [Beijing](city)?
+    - Tell me the temperature in [Los Angeles](city).
+    - What's the weather forecast for [Mumbai](city)?
+    - Give me the weather update for [Chicago](city).
+    - How's the weather in [Berlin](city)?
+    - What's the weather like in [Tokyo](city)?
+    - Tell me the temperature in [Seoul](city).
+    - What's the weather forecast for [Shanghai](city)?
+    - Give me the weather details for [Madrid](city).
+    - How's the weather in [Dubai](city)?
+    - What's the weather like in [Hong Kong](city)?
+    - Tell me the temperature in [Kuala Lumpur](city).
+    - What's the weather forecast for [Vienna](city)?

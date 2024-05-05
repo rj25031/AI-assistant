@@ -1,62 +1,25 @@
-import datetime
-from playsound import playsound
+from datetime import datetime
+from win10toast import ToastNotifier
+import threading
 
+def notify_user(reminder_msg):
+    toaster = ToastNotifier()
+    toaster.show_toast("Reminder", reminder_msg, duration=10)
 
-def set_reminder():
-    try:
-        # Listen for the date
-        speak("When do you want to be reminded? (e.g., 'April 30, 2024')")
-        with sr.Microphone() as source:
-            audio = r.listen(source)
-            date_str = r.recognize_google(audio)
-            reminder_date = datetime.datetime.strptime(date_str, "%B %d, %Y")
+def set_up_reminder(task, time_str):
+    reminder_time = datetime.strptime(time_str, '%I:%M %p')
+    current_date = datetime.now().date()
+    reminder_time = datetime.combine(current_date, reminder_time.time())
+    current_time = datetime.now()
+    time_diff = reminder_time - current_time
+    if time_diff.total_seconds() < 0:
+        return "Error: Reminder time is in the past."
 
-        # Listen for the time
-        speak("What time do you want to be reminded? (e.g., '3:30 PM')")
-        with sr.Microphone() as source:
-            audio = r.listen(source)
-            time_str = r.recognize_google(audio)
-            reminder_time = datetime.datetime.strptime(time_str, "%I:%M %p").time()
+    def background_reminder():
+        import time
+        time.sleep(time_diff.total_seconds())
+        notify_user(task)
 
-        # Listen for the reason
-        speak("What's the reminder for?")
-        with sr.Microphone() as source:
-            audio = r.listen(source)
-            reason = r.recognize_google(audio)
+    threading.Thread(target=background_reminder).start()
 
-        # Set the reminder time
-        reminder_datetime = datetime.datetime.combine(reminder_date.date(), reminder_time)
-        speak(f"Reminder set for {reminder_datetime.strftime('%A, %B %d, %Y %I:%M %p')}: {reason}")
-
-    except Exception as e:
-        speak(f"Error: {e}")
-
-# Function to set an alarm
-def set_alarm():
-    try:
-        # Listen for the time
-        speak("What time do you want to set the alarm for? (e.g., '6:00 AM', '1:00 PM', '6:00 PM')")
-        with sr.Microphone() as source:
-            audio = r.listen(source)
-            time_str = r.recognize_google(audio)
-
-        # Parse the time string and set the alarm time
-        time_format = "%I:%M %p"
-        try:
-            alarm_time = datetime.datetime.strptime(time_str, time_format).time()
-        except ValueError:
-            speak(f"Error: Could not parse the time '{time_str}'. Please try again.")
-            return
-
-        speak(f"Alarm set for {alarm_time.strftime('%I:%M %p')}")
-
-        # Play the alarm sound at the specified time
-        while True:
-            current_time = datetime.datetime.now().time()
-            if current_time >= alarm_time:
-                playsound("alarm_sound.mp3")
-                break
-
-    except Exception as e:
-        speak(f"Error: {e}")
-
+    return f"Reminder set for {reminder_time.strftime('%I:%M %p')} today: {task}"

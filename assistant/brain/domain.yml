@@ -14,13 +14,14 @@ intents:
   - set_reminder
   - open_app
   - calculate
-  - file_management
-  - min_max
-  - notes
+  - minimize_window
+  - maximize_window
   - email
-  - shutdown_restart
+  - shutdown_computer
+  - restart_computer
   - get_weather
-
+  - play_music
+  - media_action
 
 responses:
   utter_greet:
@@ -29,7 +30,6 @@ responses:
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
   - text: "Did that help you?"
@@ -45,7 +45,7 @@ responses:
   utter_pv:
   - text: "playing your video"
   utter_ss:
-  - text: "taking ss of current page"
+  - text: "taking ss of current window"
   utter_ws:
   - text: "searching on web"
   
@@ -56,32 +56,46 @@ responses:
   - text: "opening  the app for you"
 
   utter_calculate:
-  - text: "Sure, I'll do it for you."
+  - text: "Sure, I'll calculate it for you."
 
-  utter_file_management:
-  - text: "doing it for you"
 
-  utter_min_max:
-  - text: "done"
-
-  utter_notes:
-  - text: "sure, i'll do  that for you"
+  utter_min:
+  - text: "minimizing"
+  
+  utter_max:
+  - text: "maximizing"
 
   utter_email:
-  - text: "What is the email address?"
   - text: "writing mail for you"
 
-  utter_shutdown_restart:
-  - text: "Okay. I can help with that."
+  utter_shutdown:
+  - text: "shutting down."
+  
+  utter_restart:
+  - text: "restarting."
 
   utter_get_weather:
-  - text: "okay"
+  - text: "getting wether info"
+
+  utter_play_music:
+  - text: "getting wether info"
+
+  utter_media_action:
+  - text: "getting wether info"
+
+  
 
 
-
-actions:
-  - action_hello_world
-
+entities:
+- video_subject
+- query
+- task
+- time 
+- date
+- app
+- city
+- song
+- action
 
 session_config:
   session_expiration_time: 60

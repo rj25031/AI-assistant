@@ -7,12 +7,20 @@ def get_intent(message):
     }
     try:
         response = requests.post(url, json=data)
-        response.raise_for_status()  # Raise an exception for bad status codes
+        response.raise_for_status()  
         parsed_response = response.json()
         intent = parsed_response["intent"]["name"]
-        return intent
-        # return parsed_response
+        response_text = parsed_response.get("response", "") 
+        
+        # Extract entities
+        entities = parsed_response.get("entities", [])
+        extracted_entities = {}
+        for entity in entities:
+            entity_type = entity["entity"]
+            entity_value = entity["value"]
+            extracted_entities[entity_type] = entity_value
+        
+        return intent, response_text, extracted_entities
     except requests.exceptions.RequestException as e:
         print("Error making request:", e)
-        return None
-
+        return None, None, None

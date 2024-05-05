@@ -59,32 +59,43 @@ stories:
       - intent: calculate
       - action: utter_calculate
 
-  - story: file management
+  - story: min 
     steps:
-      - intent: file_management
-      - action: utter_file_management
+      - intent: minimize_window
+      - action: utter_min
 
-  - story: min max
+  - story: max 
     steps:
-      - intent: min_max
-      - action: utter_min_max
+      - intent: maximize_window
+      - action: utter_max
 
-  - story: take notes
-    steps:
-      - intent: notes
-      - action: utter_notes
 
   - story: email
     steps:
       - intent: email
       - action: utter_email
 
-  - story: shutdown or restart
+  - story: shutdown
     steps:
-      - intent: shutdown_restart
-      - action: utter_shutdown_restart
+      - intent: shutdown_computer
+      - action: utter_shutdown
+
+  - story: restart
+    steps:
+      - intent: restart_computer
+      - action: utter_restart
 
   - story: get weather
     steps:
       - intent: get_weather
       - action: utter_get_weather
+
+  - story: play music
+    steps:
+      - intent: play_music
+      - action: utter_play_music
+      
+  - story: media action
+    steps:
+      - intent: media_action
+      - action: utter_media_action

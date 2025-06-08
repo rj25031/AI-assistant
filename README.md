@@ -1,11 +1,11 @@
 
-# 🧠 AI Windows Assistant
+# 🧠 RASA Windows Assistant
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Built with Rasa](https://img.shields.io/badge/Built%20With-Rasa-blue)](https://rasa.com)
 [![Powered by Python](https://img.shields.io/badge/Python-3.10+-yellow)](https://www.python.org)
 
-**AI Windows Assistant** is a Python-based voice assistant that listens to user commands and performs Windows or web operations accordingly. It is built using the **Rasa framework** for intent classification and dialogue management, and uses **Poetry** as the dependency manager.
+**RASA Windows Assistant** is a Python-based voice assistant that listens to user commands and performs Windows or web operations accordingly. It is built using the **Rasa framework** for intent classification and dialogue management, and uses **Poetry** as the dependency manager.
 
 ---
 

@@ -54,7 +54,7 @@ poetry run python assistant/main.py
 
 ## 📸 Screenshot
 
-![AI Assistant Interface](/screenshots/screnshot_1.png)
+![AI Assistant Interface](/screenshots/screenshot_1.png)
 
 ---
 
